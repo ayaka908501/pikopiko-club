@@ -28,14 +28,26 @@ li {
     list-style: none;
 }
 
-h1, h2, h3 {
-  font-weight: 700; /* Bold 見出し用 */
+h1,
+h2,
+h3 {
+    font-weight: 700;
+    /* Bold 見出し用 */
 }
 
 /*---------------------------------------------
  header 
  ---------------------------------------------*/
- header {
+header {
+    background-image: url(../image/main-visual.jpg);
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+
+.header-line {
     position: fixed;
     width: 100%;
     line-height: 80px;
@@ -46,51 +58,51 @@ h1, h2, h3 {
     background-color: #05A277;
 }
 
-header img {
-   padding-top: 20px;
+.header-line img {
+    padding-top: 20px;
 }
 
- .toggle-btn {
+.toggle-btn {
     width: 50px;
     height: 30px;
     position: relative;
     transition: all 0.5s;
     cursor: pointer;
     z-index: 20;
- }
+}
 
- .toggle-btn span {
+.toggle-btn span {
     display: block;
     width: 100%;
     height: 2px;
     background-color: #333;
     transition: all 0.5s;
     position: absolute;
- }
+}
 
- .toggle-btn span:nth-child(1) {
+.toggle-btn span:nth-child(1) {
     top: 33%;
- }
+}
 
- .toggle-btn span:nth-child(2) {
+.toggle-btn span:nth-child(2) {
     top: 66%;
- }
+}
 
- .open .toggle-btn span {
+.open .toggle-btn span {
     background-color: white;
- }
+}
 
- .open .toggle-btn span:nth-child(1) {
+.open .toggle-btn span:nth-child(1) {
     top: 50%;
     transform: rotate(-45deg);
- }
+}
 
- .open .toggle-btn span:nth-child(2) {
+.open .toggle-btn span:nth-child(2) {
     top: 50%;
-    transform: rotate(45deg);    
- }
+    transform: rotate(45deg);
+}
 
- nav {
+nav {
     position: fixed;
     opacity: 0;
     top: 0;
@@ -100,31 +112,32 @@ header img {
     padding: 40px;
     box-sizing: border-box;
     z-index: 20;
- }
- nav li {
-   margin-top: 32px;
+}
+
+nav li {
+    margin-top: 32px;
     line-height: 80px;
     font-size: 42px;
- }
+}
 
- nav li:hover {
-   opacity: 0.7;
- }
+nav li:hover {
+    opacity: 0.7;
+}
 
- nav a {
+nav a {
     color: white;
- }
+}
 
- .open nav {
+.open nav {
     left: 70%;
     opacity: 1;
- }
+}
 
- .mask {
+.mask {
     display: none;
- }
+}
 
- .open .mask {
+.open .mask {
     display: block;
     background-color: #FBEB2C;
     position: fixed;
@@ -133,21 +146,24 @@ header img {
     right: 0;
     left: 70%;
     z-index: 10;
- }
+}
 
- /*---------------------------------------------
-  main
-  --------------------------------------------- */
-  .mainvisual {
-    margin: 160px 0;
-    height: 700px;
-    border-radius: 30px;
-  }
+p.about-lead {
+    font-size: 64px;
+    position: absolute;
+    top: 40%;
+    right: 10%;
+    bottom: 0;
+    left: 0;
+    margin: auto;
+    color: rgba(255, 255, 255, 0.8);
+    font-weight: bold;
+}
 
 /*---------------------------------------------
  about
  ---------------------------------------------*/
- 
+
 .about-flex {
     display: flex;
     justify-content: center;
@@ -182,19 +198,29 @@ header img {
 }
 
 .into-event {
-    text-decoration:  none;             /* デフォルトCSS打ち消し */
-    color: #8b4513;                       /* 文字色指定 */
-    background-color: #d2b48c;          /* 背景色指定 */
-    width: 600px;                       /* 幅指定 */
-    display: block;                     /* ブロック要素にする */
-    text-align:  center;                /* 中央揃え */
-    padding: 15px;                      /* 余白指定 */
-    border-radius:  5px;                /* 角丸指定 */
-    font-size: 24px;                    /* 文字サイズ指定 */
-    box-shadow: 0 2px 10px 0 #9E9E9E;   /* 影指定 */
-    margin-inline:auto;
+    text-decoration: none;
+    /* デフォルトCSS打ち消し */
+    color: #8b4513;
+    /* 文字色指定 */
+    background-color: #d2b48c;
+    /* 背景色指定 */
+    width: 600px;
+    /* 幅指定 */
+    display: block;
+    /* ブロック要素にする */
+    text-align: center;
+    /* 中央揃え */
+    padding: 15px;
+    /* 余白指定 */
+    border-radius: 5px;
+    /* 角丸指定 */
+    font-size: 24px;
+    /* 文字サイズ指定 */
+    box-shadow: 0 2px 10px 0 #9E9E9E;
+    /* 影指定 */
+    margin-inline: auto;
     margin-bottom: 100px;
-} 
+}
 
 .event-image img {
     width: 100px;
@@ -202,29 +228,38 @@ header img {
 }
 
 .slider {
-  overflow: hidden;
-  width: 100%;
-  padding: 20px 0;
-  background: linear-gradient(135deg, #fceabb, #556b2f);
-  
+    overflow: hidden;
+    width: 100%;
+    padding: 20px 0;
+    background: linear-gradient(135deg, #fceabb, #556b2f);
+
 }
 
 .track {
-  display: flex;
-  width: calc((100px + 16px) * 21); /* 画像21枚分 */
-  animation: scroll 10s linear infinite;
+    display: flex;
+    width: calc((100px + 16px) * 21);
+    /* 画像21枚分 */
+    animation: scroll 10s linear infinite;
 }
 
 .track img {
-  flex-shrink: 0;
-  width: 100px;
-  height: 100px;
-  margin-right: 16px; /* 1rem */
+    flex-shrink: 0;
+    width: 100px;
+    height: 100px;
+    margin-right: 16px;
+    /* 1rem */
 }
 
 @keyframes scroll {
-  0%   { transform: translateX(0); }
-  100% { transform: translateX(calc(-1 * ((100px + 16px) * 7))); } /* 7枚分だけ左に動かす */
+    0% {
+        transform: translateX(0);
+    }
+
+    100% {
+        transform: translateX(calc(-1 * ((100px + 16px) * 7)));
+    }
+
+    /* 7枚分だけ左に動かす */
 }
 
 /*---------------------------------------------
@@ -300,7 +335,8 @@ header img {
     font-weight: bold;
     font-size: 20px;
     text-align: center;
-    pointer-events: none; /* 画像部分のクリックを有効にするならあるとよい */
+    pointer-events: none;
+    /* 画像部分のクリックを有効にするならあるとよい */
 }
 
 /*---------------------------------------------
@@ -335,7 +371,8 @@ header img {
     font-weight: bold;
     color: #4b6f44;
     background-color: #eef5e9;
-    cursor: pointer;  /*カーソル合わせたら指差しになる*/
+    cursor: pointer;
+    /*カーソル合わせたら指差しになる*/
 }
 
 .faq-question:hover {
@@ -351,7 +388,8 @@ header img {
     left: 20px;
     width: 16px;
     height: 16px;
-    transform: translateY(-50%);  /*[＋]を行の真ん中に*/
+    transform: translateY(-50%);
+    /*[＋]を行の真ん中に*/
 }
 
 .faq-question .btn:before,
@@ -378,7 +416,8 @@ header img {
 }
 
 .faq-item[open] .btn:after {
-    transform: scaleY(0); /*[-] に見せる */
+    transform: scaleY(0);
+    /*[-] に見せる */
 }
 
 .faq-question::-webkit-details-marker {
@@ -386,10 +425,13 @@ header img {
 }
 
 summary {
-    list-style: none;  /*[▶︎]が入ってたのを消すため*/
+    list-style: none;
+    /*[▶︎]が入ってたのを消すため*/
 }
+
 summary::-webkit-details-marker {
-    display: none;  /*[▶︎]が入ってたのを消すため*/
+    display: none;
+    /*[▶︎]が入ってたのを消すため*/
 }
 
 /*------アコーディオン開いた中身------*/
@@ -403,25 +445,23 @@ summary::-webkit-details-marker {
 }
 
 
- /* ---------------------------------------------
+/* ---------------------------------------------
  footer 
  ----------------------------------------------------*/
- footer {
+footer {
     background-color: #05A277;
     height: 24px;
     text-align: center;
- }
+}
 
- footer p {
+footer p {
     font-size: 14px;
- }
+}
 
 
 
 
- /*-------------------------------------------
+/*-------------------------------------------
  レスポンシブ
  -------------------------------------------*/
- @media(max-width: 700px) {
-   
- }
+@media(max-width: 700px) {}
