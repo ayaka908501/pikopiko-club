@@ -303,10 +303,104 @@ header img {
     pointer-events: none; /* 画像部分のクリックを有効にするならあるとよい */
 }
 
+/*---------------------------------------------
+ faq
+ ---------------------------------------------*/
+.faq {
+    max-width: 1000px;
+    margin: 80px auto;
+    padding: 20px;
+}
 
+.faq-title {
+    text-align: center;
+    margin-bottom: 40px;
+    font-size: 42px;
+    /* color: #4b6f44; */
+    /* display: inline-block; */
+    padding-bottom: 8px;
+}
 
+.faq-item {
+    margin-bottom: 20px;
+    border: 3px solid #dbe8ce;
+    border-radius: 10px;
+    background-color: #f9fbf6;
+}
 
+.faq-question {
+    position: relative;
+    padding: 16px 100px;
+    font-size: 24px;
+    font-weight: bold;
+    color: #4b6f44;
+    background-color: #eef5e9;
+    cursor: pointer;  /*カーソル合わせたら指差しになる*/
+}
 
+.faq-question:hover {
+    background-color: #e4f0dc;
+    /*[1]と[2]の間がhoverしないかも*/
+}
+
+/*------[+]の部分------*/
+
+.faq-question .btn {
+    position: absolute;
+    top: 50%;
+    left: 20px;
+    width: 16px;
+    height: 16px;
+    transform: translateY(-50%);  /*[＋]を行の真ん中に*/
+}
+
+.faq-question .btn:before,
+.faq-question .btn:after {
+    content: "";
+    position: absolute;
+    background-color: #4b6f44;
+    border-radius: 1px;
+    transition: 0.3s;
+}
+
+.faq-question .btn:before {
+    width: 16px;
+    height: 2px;
+    top: 7px;
+    left: 0;
+}
+
+.faq-question .btn:after {
+    width: 2px;
+    height: 16px;
+    top: 0;
+    left: 7px;
+}
+
+.faq-item[open] .btn:after {
+    transform: scaleY(0); /*[-] に見せる */
+}
+
+.faq-question::-webkit-details-marker {
+    display: none;
+}
+
+summary {
+    list-style: none;  /*[▶︎]が入ってたのを消すため*/
+}
+summary::-webkit-details-marker {
+    display: none;  /*[▶︎]が入ってたのを消すため*/
+}
+
+/*------アコーディオン開いた中身------*/
+
+.faq-answer {
+    padding: 30px;
+    background-color: #ffffff;
+    color: #333;
+    font-size: 24px;
+    line-height: 1.6;
+}
 
 
  /* ---------------------------------------------
