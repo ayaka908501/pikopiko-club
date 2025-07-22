@@ -16,6 +16,7 @@ body {
 .wrapper {
     max-width: 1300px;
     margin: 0 auto;
+    padding-inline: 16px;
 }
 
 img {
@@ -168,9 +169,15 @@ p.about-lead {
 /*---------------------------------------------
  about
  ---------------------------------------------*/
+.about-title {
+    font-size: 64px;
+    text-align: center;
+    margin: 80px auto;
+}
+
 .about-text {
     text-align: center;
-    margin-bottom: 50px;
+    margin-bottom: 80px;
 }
 
 
@@ -178,14 +185,14 @@ p.about-lead {
  event
  ---------------------------------------------*/
 .event {
-    margin-bottom: 100px;
+    margin-bottom: 80px;
 }
 
 .into-event {
 
     text-decoration:  none;
-    color: #8b4513;
-    background-color: #d2b48c;
+    color: #4b6f44;
+    background-color: #e4f0dc;
     width: 600px;
     display: block;
     text-align:  center;
@@ -208,6 +215,7 @@ p.about-lead {
     width: 100%;
     padding: 20px 0;
     background: linear-gradient(135deg, #fceabb, #556b2f);
+    margin-bottom: 80px;
 
 }
 
@@ -234,8 +242,6 @@ p.about-lead {
     100% {
         transform: translateX(calc(-1 * ((100px + 16px) * 7)));
     }
-
-    /* 7枚分だけ左に動かす */
 }
 
 /*---------------------------------------------
@@ -245,43 +251,79 @@ p.about-lead {
     font-size: 64px;
     padding-top: 160px;
     text-align: center;
+    margin-bottom: 40px;
  }
 
  .event-detail-image {
-    width: 500px;
+    width: 800px;
     height: 200px;
     margin-inline: auto;
+    margin-bottom: 500px;
  }
 
  .event-detail-image img {
     border-radius: 80%;
  }
 
+ .cheers-flex {
+    display: flex;
+    justify-content: center;
+ }
+
+ .cheers-image {
+    width: 50%;
+ }
+
+ .cheers-image img {
+    height: 500px;
+    width: 500px;
+    border-radius: 50%;
+ }
+
+ .cheers-text {
+    width: 50%;
+ }
+
+ .cheers-title {
+    font-size: 56px;
+ }
 
 
 /*---------------------------------------------
  user-comment
  ---------------------------------------------*/
 .user-comment {
-    margin-bottom: 200px;
+    margin-bottom: 80px;
 }
 
 .user-comment-title {
     font-size: 64px;
     text-align: center;
-    margin-bottom: 100px;
+    margin-bottom: 80px;
 }
 
 .user-comment-flex-a {
     display: flex;
-    justify-content: center;
     align-items: center;
+    justify-content: center;
 }
 
-.user-comment-image-left {
-    width: 200px;
-    height: 200px;
-    margin-right: 100px;
+.user-comment-image-a {
+    width: 50%;
+    height: auto;
+    text-align: right;
+    padding-right: 150px;
+}
+
+.user-comment-image-a img {
+    width: 150px;
+    height: 150px;
+}
+
+.user-comment-text-a {
+    width: 50%;
+    min-width: 0;
+    text-align: left;
 }
 
 .user-comment-flex-k {
@@ -289,16 +331,31 @@ p.about-lead {
     flex-direction: row-reverse;
     justify-content: center;
     align-items: center;
+    margin-bottom: 80px;
 }
 
-.user-comment-image-right {
-    width: 200px;
-    height: 200px;
-    margin-left: 100px;
+.user-comment-image-k {
+    width: 50%;
+    height: auto;
+    text-align: left;
+    padding-left: 150px;
+}
+
+.user-comment-image-k img {
+    width: 150px;
+    height: 150px;
+}
+
+.user-comment-text-k {
+    width: 50%;
+    min-width: 0;
+    text-align: right;
 }
 
 .user-comment-text p {
-    width: 100%;
+    margin: 0;
+    word-break: break-word;
+    overflow-wrap: break-word;
 }
 
 .user-comment-readmore {

@@ -1,33 +1,55 @@
 <!DOCTYPE html>
 <html lang="ja">
+    <head>
+        <meta charset="utf-8" />
+        <title>metaleaf</title>
+        <meta
+            name="description"
+            content="テキストテキストテキストテキストテキストテキストテキストテキスト"
+        />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <link rel="shortcut icon" href="img/favicon.ico" />
+        <link
+            rel="stylesheet"
+            href="https://unpkg.com/ress/dist/ress.min.css"
+        />
 
-<head>
-    <meta charset="utf-8" />
-    <title>metaleaf</title>
-    <meta name="description" content="テキストテキストテキストテキストテキストテキストテキストテキスト" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link rel="shortcut icon" href="img/favicon.ico" />
-    <link rel="stylesheet" href="https://unpkg.com/ress/dist/ress.min.css" />
+        <!-- google font埋め込み -->
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Zen+Maru+Gothic&display=swap"
+            rel="stylesheet"
+        />
 
-    <!-- google font埋め込み -->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Zen+Maru+Gothic&display=swap" rel="stylesheet" />
+        <!-- 自作CSS読み込み -->
+        <link rel="stylesheet" href="css2/style.css" />
+    </head>
 
-    <!-- 自作CSS読み込み -->
-    <link rel="stylesheet" href="css2/style.css" />
-</head>
-
-<body>
-    <header>
-        <div class="header-line">
-            <h1>
-                <a href="#"><img src="image/スクリーンショット 2025-07-21 000555.png" alt="" /></a>
-            </h1>
-            <div class="toggle-btn">
-                <span></span>
-                <span></span>
+    <body>
+        <header>
+            <div class="header-line">
+                <h1>
+                    <a href="#"
+                        ><img
+                            src="image/スクリーンショット 2025-07-21 000555.png"
+                            alt=""
+                    /></a>
+                </h1>
+                <div class="toggle-btn">
+                    <span></span>
+                    <span></span>
+                </div>
+                <nav>
+                    <ul class="nav-menu">
+                        <li><a href="#">メタリーフって？</a></li>
+                        <li><a href="#">利用者の声</a></li>
+                        <li><a href="#">FAQ</a></li>
+                    </ul>
+                </nav>
+                <div class="mask"></div>
             </div>
+
             <nav>
                 <ul class="nav-menu">
                     <li><a href="#">メタリーフって？</a></li>
@@ -42,147 +64,166 @@
         </p>
     </header>
 
-    <main>
 
-        <section class="about wrapper">
-            <div class="about-text">
-                <p>
-                    テキストテキストテキストテキストテキストテキストテキスト<br />テキストテキストテキストテキストテキストテキストテキストテキスト<br />テキストテキストテキストテキストテキストテキストテキスト<br />テキストテキストテキストテキストテキストテキストテキストテキスト<br />テキストテキストテキストテキストテキストテキストテキスト<br />テキストテキストテキストテキストテキストテキストテキストテキスト
-                </p>
-            </div>
-        </section>
-
-        <section class="event wrapper">
-            <a href="event.html" target="_blank" class="into-event">入会した人だけが体験できるイベント盛りだくさん</a>
-        </section>
-
-        <div class="event-image slider">
-            <div class="track">
-                <img src="./image/icon1.png" alt="" />
-                <img src="./image/icon2.png" alt="" />
-                <img src="./image/icon3.png" alt="" />
-                <img src="./image/icon4.png" alt="" />
-                <img src="./image/icon5.png" alt="" />
-                <img src="./image/icon6.png" alt="" />
-                <img src="./image/icon7.png" alt="" />
-                <img src="./image/icon1.png" alt="" />
-                <img src="./image/icon2.png" alt="" />
-                <img src="./image/icon3.png" alt="" />
-                <img src="./image/icon4.png" alt="" />
-                <img src="./image/icon5.png" alt="" />
-                <img src="./image/icon6.png" alt="" />
-                <img src="./image/icon7.png" alt="" />
-                <img src="./image/icon1.png" alt="" />
-                <img src="./image/icon2.png" alt="" />
-                <img src="./image/icon3.png" alt="" />
-                <img src="./image/icon4.png" alt="" />
-                <img src="./image/icon5.png" alt="" />
-                <img src="./image/icon6.png" alt="" />
-                <img src="./image/icon7.png" alt="" />
-            </div>
-        </div>
-
-        <section class="user-comment wrapper">
-            <h2 class="user-comment-title">利用者の声</h2>
-            <div class="user-comment-flex-a">
-                <div class="user-comment-image-left">
-                    <img src="./image/icon1.png" alt="icon" />
-                </div>
-                <div class="user-comment-text">
+        <main>
+            <section class="about wrapper">
+                <h2 class="about-title">メタリーフって？</h2>
+                <div class="about-text">
                     <p>
-                        テキストテキストテキストテキストテキストテキストテキストテキスト<br />テキストテキストテキストテキストテキストテキストテキストテキスト<br />テキストテキストテキストテキストテキストテキストテキストテキスト<br />テキストテキストテキストテキストテキストテキストテキストテキスト
+                        テキストテキストテキストテキストテキストテキストテキスト<br />テキストテキストテキストテキストテキストテキストテキストテキスト<br />テキストテキストテキストテキストテキストテキストテキスト<br />テキストテキストテキストテキストテキストテキストテキストテキスト<br />テキストテキストテキストテキストテキストテキストテキスト<br />テキストテキストテキストテキストテキストテキストテキストテキスト
                     </p>
                 </div>
+            </section>
+
+            <section class="event wrapper">
+                <a href="event.html" target="_blank" class="into-event"
+                    >入会した人だけが体験できるイベント盛りだくさん</a
+                >
+            </section>
+
+            <div class="event-image slider">
+                <div class="track">
+                    <img src="./image/icon1.png" alt="" />
+                    <img src="./image/icon2.png" alt="" />
+                    <img src="./image/icon3.png" alt="" />
+                    <img src="./image/icon4.png" alt="" />
+                    <img src="./image/icon5.png" alt="" />
+                    <img src="./image/icon6.png" alt="" />
+                    <img src="./image/icon7.png" alt="" />
+                    <img src="./image/icon1.png" alt="" />
+                    <img src="./image/icon2.png" alt="" />
+                    <img src="./image/icon3.png" alt="" />
+                    <img src="./image/icon4.png" alt="" />
+                    <img src="./image/icon5.png" alt="" />
+                    <img src="./image/icon6.png" alt="" />
+                    <img src="./image/icon7.png" alt="" />
+                    <img src="./image/icon1.png" alt="" />
+                    <img src="./image/icon2.png" alt="" />
+                    <img src="./image/icon3.png" alt="" />
+                    <img src="./image/icon4.png" alt="" />
+                    <img src="./image/icon5.png" alt="" />
+                    <img src="./image/icon6.png" alt="" />
+                    <img src="./image/icon7.png" alt="" />
+                </div>
             </div>
-            <div class="user-comment-flex-k">
-                <div class="user-comment-image-right">
-                    <img src="./image/icon2.png" alt="icon" />
+
+            <section class="user-comment wrapper">
+                <h2 class="user-comment-title">利用者の声</h2>
+                <div class="user-comment-flex-a">
+                    <div class="user-comment-image-a">
+                        <img src="./image/icon1.png" alt="icon" />
+                    </div>
+                    <div class="user-comment-text-a">
+                        <p>
+                            テキストテキストテキストテキストテキスト<br />テキストテキストテキストテキストテキスト<br />テキストテキストテキストテキストテキスト<br />テキストテキストテキストテキストテキスト
+                        </p>
+                    </div>
                 </div>
-                <div class="user-comment-text">
-                    <p>
-                        テキストテキストテキストテキストテキストテキストテキストテキスト<br />テキストテキストテキストテキストテキストテキストテキストテキスト<br />テキストテキストテキストテキストテキストテキストテキストテキスト<br />テキストテキストテキストテキストテキストテキストテキストテキスト
-                    </p>
+                <div class="user-comment-flex-k">
+                    <div class="user-comment-image-k">
+                        <img src="./image/icon2.png" alt="icon" />
+                    </div>
+                    <div class="user-comment-text-k">
+                        <p>
+                            テキストテキストテキストテキストテキスト<br />テキストテキストテキストテキストテキスト<br />テキストテキストテキストテキストテキスト<br />テキストテキストテキストテキストテキスト
+                        </p>
+                    </div>
                 </div>
-            </div>
-            <div class="user-comment-readmore">
-                <a href="#" class="readmore-image">
-                    <img src="image/acacia_leef2.png" alt="">
-                    <span class="readmore-text">Read More</span>
-                </a>
-            </div>
-        </section>
-
-        <section class="faq wrapper">
-            <h2 class="faq-title">FAQ</h2>
-
-            <details class="faq-item">
-                <summary class="faq-question"><span class="btn"></span>作業会参加までの流れは？</summary>
-                <div class="faq-answer">
-                    <p>思案中</p>
+                <div class="user-comment-readmore">
+                    <a href="#" class="readmore-image">
+                        <img src="image/acacia_leef2.png" alt="" />
+                        <span class="readmore-text">Read More</span>
+                    </a>
                 </div>
-            </details>
+            </section>
 
-            <details class="faq-item">
-                <summary class="faq-question"><span class="btn"></span>何時から何時までやってるの？</summary>
-                <div class="faq-answer">
-                    <p>思案中</p>
-                </div>
-            </details>
+            <section class="faq wrapper">
+                <h2 class="faq-title">FAQ</h2>
 
-            <details class="faq-item">
-                <summary class="faq-question"><span class="btn"></span>初参加で何したらいいかわからない時は？</summary>
-                <div class="faq-answer">
-                    <p>思案中</p>
-                </div>
-            </details>
+                <details class="faq-item">
+                    <summary class="faq-question">
+                        <span class="btn"></span>作業会参加までの流れは？
+                    </summary>
+                    <div class="faq-answer">
+                        <p>思案中</p>
+                    </div>
+                </details>
 
-            <details class="faq-item">
-                <summary class="faq-question"><span class="btn"></span>知り合いがいないけど、いきなり話しかけてもいいの？</summary>
-                <div class="faq-answer">
-                    <p>思案中</p>
-                </div>
-            </details>
+                <details class="faq-item">
+                    <summary class="faq-question">
+                        <span class="btn"></span>何時から何時までやってるの？
+                    </summary>
+                    <div class="faq-answer">
+                        <p>思案中</p>
+                    </div>
+                </details>
 
-            <details class="faq-item">
-                <summary class="faq-question"><span class="btn"></span>みんな本当に存在してる方々？</summary>
-                <div class="faq-answer">
-                    <p>思案中</p>
-                </div>
-            </details>
-        </section>
+                <details class="faq-item">
+                    <summary class="faq-question">
+                        <span class="btn"></span
+                        >初参加で何したらいいかわからない時は？
+                    </summary>
+                    <div class="faq-answer">
+                        <p>思案中</p>
+                    </div>
+                </details>
 
-        <section class="contact wrapper">
-            <h2 class="contact-title">お問い合わせ</h2>
-            <form class="contact-form">
-                <div class="form-group">
-                    <label for="name">お名前</label>
-                    <input type="text" id="name" name="name" required />
-                </div>
-                <div class="form-group">
-                    <label for="email">メールアドレス</label>
-                    <input type="email" id="email" name="email" required />
-                </div>
-                <div class="form-group">
-                    <label for="tel">電話番号</label>
-                    <input type="tel" id="tel" name="tel" required />
-                </div>
-                <div class="form-group">
-                    <label for="message">お問い合わせ内容</label>
-                    <textarea id="message" name="message" rows="4" required></textarea>
-                </div>
-                <button type="submit" class="contact-submit">送信する</button>
-            </form>
-        </section>
+                <details class="faq-item">
+                    <summary class="faq-question">
+                        <span class="btn"></span
+                        >知り合いがいないけど、いきなり話しかけてもいいの？
+                    </summary>
+                    <div class="faq-answer">
+                        <p>思案中</p>
+                    </div>
+                </details>
 
+                <details class="faq-item">
+                    <summary class="faq-question">
+                        <span class="btn"></span>みんな本当に存在してる方々？
+                    </summary>
+                    <div class="faq-answer">
+                        <p>思案中</p>
+                    </div>
+                </details>
+            </section>
 
-    </main>
+            <section class="contact wrapper">
+                <h2 class="contact-title">お問い合わせ</h2>
+                <form class="contact-form">
+                    <div class="form-group">
+                        <label for="name">お名前</label>
+                        <input type="text" id="name" name="name" required />
+                    </div>
+                    <div class="form-group">
+                        <label for="email">メールアドレス</label>
+                        <input type="email" id="email" name="email" required />
+                    </div>
+                    <div class="form-group">
+                        <label for="tel">電話番号</label>
+                        <input type="tel" id="tel" name="tel" required />
+                    </div>
+                    <div class="form-group">
+                        <label for="message">お問い合わせ内容</label>
+                        <textarea
+                            id="message"
+                            name="message"
+                            rows="4"
+                            required
+                        ></textarea>
+                    </div>
+                    <button type="submit" class="contact-submit">
+                        送信する
+                    </button>
+                </form>
+            </section>
+        </main>
 
-    <footer>
-        <p>&copy; 2025 metaleaf</p>
-    </footer>
+        <footer>
+            <p>&copy; 2025 metaleaf</p>
+        </footer>
 
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script src="js/main.js"></script>
-</body>
-
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="js/main.js"></script>
+    </body>
 </html>
