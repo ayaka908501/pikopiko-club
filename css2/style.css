@@ -43,7 +43,7 @@ h3 {
 /*---------------------------------------------
  header 
  ---------------------------------------------*/
-header {
+.header-img {
     background-image: url(../image/main-visual.jpg);
     width: 100%;
     height: 100vh;
@@ -122,6 +122,7 @@ nav {
 nav li {
     line-height: 80px;
     font-size: 48px;
+    font-weight: bold;
 }
 
 nav li:hover {
@@ -153,17 +154,22 @@ nav a {
     z-index: 10;
 }
 
-p.about-lead {
-    font-size: 45px;
+.about-lead {
+    max-width: 1300px;
+    height: 400px;
     position: absolute;
-    top: 40%;
+    top: 7%;
     right: 0;
     bottom: 0;
     left: 10%;
-    margin: auto;
+}
+
+.about-lead p {
+    font-size: 45px;
     color: rgba(255, 255, 255);
     font-weight: bold;
     line-height: 90px;
+
 }
 
 /*---------------------------------------------
@@ -190,17 +196,17 @@ p.about-lead {
 
 .into-event {
 
-    text-decoration:  none;
+    text-decoration: none;
     color: #4b6f44;
     background-color: #e4f0dc;
     width: 600px;
     display: block;
-    text-align:  center;
+    text-align: center;
     padding: 15px;
-    border-radius:  5px;
+    border-radius: 5px;
     font-size: 42px;
     box-shadow: 0 2px 10px 0 #9E9E9E;
-    margin-inline:auto;
+    margin-inline: auto;
 
     margin-bottom: 100px;
 }
@@ -247,46 +253,46 @@ p.about-lead {
 /*---------------------------------------------
  event-detail
  ---------------------------------------------*/
- .event-detail-title {
+.event-detail-title {
     font-size: 64px;
     padding-top: 160px;
     text-align: center;
     margin-bottom: 40px;
- }
+}
 
- .event-detail-image {
+.event-detail-image {
     width: 800px;
     height: 200px;
     margin-inline: auto;
     margin-bottom: 500px;
- }
+}
 
- .event-detail-image img {
+.event-detail-image img {
     border-radius: 80%;
- }
+}
 
- .cheers-flex {
+.cheers-flex {
     display: flex;
     justify-content: center;
- }
+}
 
- .cheers-image {
+.cheers-image {
     width: 50%;
- }
+}
 
- .cheers-image img {
+.cheers-image img {
     height: 500px;
     width: 500px;
     border-radius: 50%;
- }
+}
 
- .cheers-text {
+.cheers-text {
     width: 50%;
- }
+}
 
- .cheers-title {
+.cheers-title {
     font-size: 56px;
- }
+}
 
 
 /*---------------------------------------------
@@ -504,81 +510,137 @@ summary::-webkit-details-marker {
 /*---------------------------------------------
  contact
  ---------------------------------------------*/
- .contact {
-  max-width: 700px;
-  margin: 80px auto;
-  padding: 20px 20px;
-  background-color: #f9fbf6;
-  border: 3px solid #dbe8ce;
-  border-radius: 12px;
+.contact {
+    max-width: 700px;
+    margin: 80px auto;
+    padding: 20px 20px;
+    background-color: #f9fbf6;
+    border: 3px solid #dbe8ce;
+    border-radius: 12px;
 }
 
 .contact-title {
-  text-align: center;
-  font-size: 42px;
-  margin-bottom: 40px;
-  color: #4b6f44;
+    text-align: center;
+    font-size: 42px;
+    margin-bottom: 40px;
+    color: #4b6f44;
 }
 
 .contact-form {
-  display: flex;
-  flex-direction: column; /*縦に並べる*/
-  gap:20px; /*フォームとフォームの間隔*/
+    display: flex;
+    flex-direction: column;
+    /*縦に並べる*/
+    gap: 20px;
+    /*フォームとフォームの間隔*/
 }
 
 .form-group {
-  display: flex;
-  flex-direction: column; /*縦に並べる*/
+    display: flex;
+    flex-direction: column;
+    /*縦に並べる*/
 }
 
 .form-group label {
-  font-size: 20px;
-  margin-bottom: 8px;
-  color: #4b6f44;
+    font-size: 20px;
+    margin-bottom: 8px;
+    color: #4b6f44;
 }
 
 /*------入力する部分------*/
 .form-group input,
 .form-group textarea {
-  padding: 5px 10px;
-  border: 2px solid #dbe8ce;
-  border-radius: 8px;
-  font-size: 18px;
-  background-color: #ffffff;
-  color: #333;
-  font-family: inherit;
-  transition: border-color 0.3s, box-shadow 0.3s;
+    padding: 5px 10px;
+    border: 2px solid #dbe8ce;
+    border-radius: 8px;
+    font-size: 18px;
+    background-color: #ffffff;
+    color: #333;
+    font-family: inherit;
+    transition: border-color 0.3s, box-shadow 0.3s;
 }
 
 /*------入力する部分触ったら縁の色変わる------*/
 .form-group input:focus,
 .form-group textarea:focus {
-  outline: none;
-  border-color: #a7cfa1;
-  box-shadow: 0 0 5px rgba(167, 207, 161, 0.4);
+    outline: none;
+    border-color: #a7cfa1;
+    box-shadow: 0 0 5px rgba(167, 207, 161, 0.4);
 }
 
 /*------送信するボタン------*/
 .contact-submit {
-  align-self: center;
-  background-color: #4b6f44;
-  color: #fff;
-  padding: 14px 40px;
-  font-size: 20px;
-  font-weight: bold;
-  border: none;
-  border-radius: 30px;
-  cursor: pointer;
-  transition: background-color 0.3s ease;
+    align-self: center;
+    background-color: #4b6f44;
+    color: #fff;
+    padding: 14px 40px;
+    font-size: 20px;
+    font-weight: bold;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
 }
 
 /*------送信する触った時------*/
 .contact-submit:hover {
-  background-color: #3a5833;
+    background-color: #3a5833;
 }
 
- /* ---------------------------------------------
+/* ---------------------------------------------
+ Topボタン
+ ----------------------------------------------------*/
+.page_top {
+    width: 90px;
+    height: 90px;
+    position: fixed;
+    right: 10px;
+    bottom: 20px;
+    background:#4b6f44;
+    border-radius: 50%;
+    z-index: 10;
+}
 
+.page_top a {
+    position: relative;
+    display: block;
+    width: 90px;
+    height: 90px;
+    text-decoration: none;
+}
+
+.page_top a::before {
+    font-family: 'Font Awesome 5 Free';
+    font-weight: 900;
+    content: '\f102';
+    font-size: 25px;
+    color: #fff;
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    top: -40px;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    margin: auto;
+    text-align: center;
+}
+
+.page_top a::after {
+    content: 'PAGE TOP';
+    font-size: 13px;
+    color: #fff;
+    position: absolute;
+    top: 45px;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    margin: auto;
+    text-align: center;
+}
+
+
+
+/* ---------------------------------------------
  footer 
  ----------------------------------------------------*/
 footer {
@@ -587,7 +649,7 @@ footer {
     text-align: center;
     position: absolute;
     bottom: 0;
-    width: 100%;    
+    width: 100%;
     margin-bottom: -80px;
 }
 
