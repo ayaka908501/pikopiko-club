@@ -8,6 +8,8 @@ $(function () {
         $("header").removeClass("open");
     });
 
+    //Topへ戻るボタン
+
     jQuery(function() {
     var pagetop = $('.page_top');   
     pagetop.hide();
