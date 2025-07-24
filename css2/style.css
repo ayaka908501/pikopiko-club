@@ -285,6 +285,9 @@ nav a {
 /*---------------------------------------------
  event-detail
  ---------------------------------------------*/
+.event-page {
+    background-color: #05A277;
+}
 .event-detail-title {
     font-size: 64px;
     padding-top: 160px;
@@ -303,26 +306,27 @@ nav a {
     border-radius: 80%;
 }
 
-.cheers-flex {
+.cheers-flex,.hackathon-flex,.beginner-meetup-flex,.seminar-flex {
     display: flex;
     justify-content: center;
+    margin-bottom: 90px;
 }
 
-.cheers-image {
+.cheers-image,.hackathon-image,.beginner-meetup-image {
     width: 50%;
 }
 
-.cheers-image img {
+.cheers-image img,.hackathon-image img,.beginner-meetup-image img {
     height: 500px;
     width: 500px;
     border-radius: 50%;
 }
 
-.cheers-text {
+.cheers-text,.hackathon-text,.beginner-meetup-text {
     width: 50%;
 }
 
-.cheers-title {
+.cheers-title,.hackathon-title,.beginner-meetup-title {
     font-size: 56px;
 }
 
