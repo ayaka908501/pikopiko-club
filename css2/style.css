@@ -420,9 +420,11 @@ nav a {
 
 .faq-item {
     margin-bottom: 20px;
-    border: 3px solid #dbe8ce;
+    /* border: 3px solid #dbe8ce; */
     border-radius: 12px;
     background-color: #f9fbf6;
+    box-shadow: 0 2px 10px 0 #9E9E9E;
+    /*.into-eventにあわせ*/
 }
 
 .faq-question {
@@ -432,17 +434,19 @@ nav a {
     font-weight: bold;
     color: #4b6f44;
     background-color: #eef5e9;
+    border-radius: 12px; 
+    /*角が丸く見えるように内側も角丸くする*/
     cursor: pointer;
     /*カーソル合わせたら指差しになる*/
 }
 
 .faq-question:hover {
     background-color: #e4f0dc;
-    /*[1]と[2]の間がhoverしないかも*/
+    /*カーソル合わせたら色変わる*/
 }
 
-/*------[+]の部分------*/
 
+/*------[+]の部分------*/
 .faq-question .btn {
     position: absolute;
     top: 50%;
@@ -476,35 +480,40 @@ nav a {
     left: 7px;
 }
 
-.faq-item[open] .btn:after {
-    transform: scaleY(0);
-    /*[-] に見せる */
-}
-
 .faq-question::-webkit-details-marker {
     display: none;
-}
-
-summary {
-    list-style: none;
     /*[▶︎]が入ってたのを消すため*/
 }
 
-summary::-webkit-details-marker {
-    display: none;
-    /*[▶︎]が入ってたのを消すため*/
-}
 
 /*------アコーディオン開いた中身------*/
-
 .faq-answer {
-    padding: 30px;
-    background-color: #ffffff;
-    color: #333;
-    font-size: 24px;
+    display: none;
+    padding: 20px 30px;
+    background-color: #fff;
+    border-top: 1px solid #dbe8ce;
+    border-radius: 0 0 12px 12px; /*角が丸く見えるように内側も角丸くする、下部*/
+    font-size: 20px;
     line-height: 1.6;
 }
 
+.faq-question.open .btn::after {
+    transform: scaleY(0); 
+    /* ＋→− の切り替えをここで制御できる */
+}
+
+.faq-question.open {
+    border-radius: 12px 12px 0 0;
+    /*開いた時は下部の丸み消す*/
+}
+
+
+/*------Answerの中身------*/
+/*1つ目*/
+.faq-answer ol li {
+    list-style: decimal;
+    list-style-position: inside;
+}
 
 
 /*---------------------------------------------
@@ -579,6 +588,7 @@ summary::-webkit-details-marker {
     border-radius: 30px;
     cursor: pointer;
     transition: background-color 0.3s ease;
+    box-shadow: 0 2px 10px 0 #9E9E9E;
 }
 
 /*------送信する触った時------*/
