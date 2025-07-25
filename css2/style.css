@@ -11,6 +11,11 @@ body {
     position: sticky;
 }
 
+
+.eventpage-only {
+    background-color: #05A277;
+}
+
 .wrapper {
     max-width: 1300px;
     margin: 0 auto;
@@ -286,6 +291,7 @@ nav a {
 .event-page {
     background-color: #05A277;
 }
+
 .event-detail-title {
     font-size: 64px;
     padding-top: 160px;
@@ -297,34 +303,40 @@ nav a {
     width: 800px;
     height: 200px;
     margin-inline: auto;
-    margin-bottom: 500px;
+    /* margin-bottom: 100px; */
 }
 
 .event-detail-image img {
     border-radius: 80%;
 }
 
-.cheers-flex,.hackathon-flex,.beginner-meetup-flex,.seminar-flex {
+.cheers-flex {
     display: flex;
     justify-content: center;
-    margin-bottom: 90px;
+    padding-top: 400px;
 }
 
-.cheers-image,.hackathon-image,.beginner-meetup-image {
+.hackathon-flex,.beginner-meetup-flex,.seminar-flex {
+    display: flex;
+    justify-content: center;
+    padding-top: 50px;
+}
+
+.cheers-image,.hackathon-image,.beginner-meetup-image,.seminar-image {
     width: 50%;
 }
 
-.cheers-image img,.hackathon-image img,.beginner-meetup-image img {
+.cheers-image img,.hackathon-image img,.beginner-meetup-image img,.seminar-image img {
     height: 500px;
     width: 500px;
     border-radius: 50%;
 }
 
-.cheers-text,.hackathon-text,.beginner-meetup-text {
+.cheers-text,.hackathon-text,.beginner-meetup-text,.seminar-text {
     width: 50%;
 }
 
-.cheers-title,.hackathon-title,.beginner-meetup-title {
+.cheers-title,.hackathon-title,.beginner-meetup-title,.seminar-title {
     font-size: 56px;
 }
 
@@ -695,6 +707,16 @@ footer {
     bottom: 0;
     width: 100%;
     margin-bottom: -110px;
+}
+
+.event-footer {
+    background-color: #05A277;
+    height: 24px;
+    text-align: center;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    margin-bottom: -80px;
 }
 
 footer p {
