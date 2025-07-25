@@ -8,8 +8,18 @@ $(function () {
         $("header").removeClass("open");
     });
 
-    //Topへ戻るボタン
+    //スムーススクロール
+    $('a[href^="#"]').click(function(){
+        let headerHeight = $('.header-line').outerHeight();
+        let href =$(this).attr("href");
+        let target = $(href == "#" || href == "" ? "html" : href);
+        let position = target.offset().top - headerHeight;
+        $("html,body").animate({ scrollTop: position }, 600,"swing");
+        $("header").removeClass("open");
+        return false;
+    });
 
+    //Topへ戻るボタン
     jQuery(function() {
     var pagetop = $('.page_top');   
     pagetop.hide();
