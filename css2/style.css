@@ -213,7 +213,8 @@ nav a {
 .about-title {
     font-size: 64px;
     text-align: center;
-    margin: 110px auto;
+    margin-top: 160px;
+    margin-bottom: 40px;
 }
 
 .about-text {
@@ -358,13 +359,14 @@ nav a {
     display: flex;
     align-items: center;
     justify-content: center;
+    margin-bottom: 30px;
 }
 
 .user-comment-image-a {
-    width: 50%;
+    width: 30%;
     height: auto;
     text-align: right;
-    padding-right: 150px;
+    padding-right: 40px;
 }
 
 .user-comment-image-a img {
@@ -373,9 +375,16 @@ nav a {
 }
 
 .user-comment-text-a {
-    width: 50%;
+    width: 40%;
+    height: 300px;
     min-width: 0;
-    text-align: left;
+    padding: 8px;
+    background-color: #66cdaa;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: left; 
 }
 
 .user-comment-flex-k {
@@ -387,10 +396,10 @@ nav a {
 }
 
 .user-comment-image-k {
-    width: 50%;
+    width: 30%;
     height: auto;
     text-align: left;
-    padding-left: 150px;
+    padding-left: 40px;
 }
 
 .user-comment-image-k img {
@@ -399,9 +408,16 @@ nav a {
 }
 
 .user-comment-text-k {
-    width: 50%;
+    width: 40%;
+    height: 300px;
     min-width: 0;
-    text-align: right;
+    padding: 8px;
+    background-color: #66cdaa;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: left; 
 }
 
 .user-comment-text p {
