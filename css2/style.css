@@ -86,6 +86,11 @@ h3 {
     display: flex;
     align-items: center;
     justify-content: center;
+    position: relative;
+    display: inline-flex;
+    overflow: hidden;
+    transition: color 0.3s ease;
+    z-index: 0;
 }
 
 .act-btn a {
@@ -93,7 +98,26 @@ h3 {
     height: 60px;
     display: flex;
     align-items: center;
+    color: #3a5f41;
 }
+
+.act-btn::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    width: 0;
+    background-color: yellow;
+    border-radius: 30px;
+    transition: width 0.4s ease;
+    z-index: -1;
+}
+
+.act-btn:hover::before {
+    width: 100%;
+}
+
 
 .login-img {
     width: 30px;
@@ -231,7 +255,6 @@ nav a {
 }
 
 .into-event {
-
     text-decoration: none;
     color: #4b6f44;
     background-color: #e4f0dc;
@@ -289,10 +312,6 @@ nav a {
 /*---------------------------------------------
  event-detail
  ---------------------------------------------*/
-.event-page {
-    background-color: #05A277;
-}
-
 .event-detail-title {
     font-size: 64px;
     padding-top: 160px;
