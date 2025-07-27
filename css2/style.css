@@ -240,11 +240,26 @@ nav a {
     margin-top: 160px;
     margin-bottom: 40px;
     color: #4b6f44;
+    position: relative;
+}
+
+.about-title::before {
+    position: absolute;
+    top: -55px;
+    left: 50%;
+    transform: translateX(-50%);
+    color: #99FF99;
+    opacity: 0.5;
+    font-size: 150px;
+    text-transform: uppercase;
+    content: 'About';
+    z-index: -1;
+    letter-spacing: 24px;
 }
 
 .about-text {
     text-align: center;
-    margin-bottom: 80px;
+    margin: 110px;
 }
 
 
@@ -270,7 +285,7 @@ nav a {
     display: inline-block;
     transition: .3s;
 
-    
+
     text-align: center;
 }
 
@@ -326,28 +341,42 @@ nav a {
     padding-top: 400px;
 }
 
-.hackathon-flex,.beginner-meetup-flex,.seminar-flex {
+.hackathon-flex,
+.beginner-meetup-flex,
+.seminar-flex {
     display: flex;
     justify-content: center;
     padding-top: 50px;
 }
 
-.cheers-image,.hackathon-image,.beginner-meetup-image,.seminar-image {
+.cheers-image,
+.hackathon-image,
+.beginner-meetup-image,
+.seminar-image {
     width: 50%;
 }
 
-.cheers-image img,.hackathon-image img,.beginner-meetup-image img,.seminar-image img {
+.cheers-image img,
+.hackathon-image img,
+.beginner-meetup-image img,
+.seminar-image img {
     height: 500px;
     width: 500px;
     border-radius: 50%;
 }
 
-.cheers-text,.hackathon-text,.beginner-meetup-text,.seminar-text {
+.cheers-text,
+.hackathon-text,
+.beginner-meetup-text,
+.seminar-text {
     width: 50%;
     color: #4b6f44;
 }
 
-.cheers-title,.hackathon-title,.beginner-meetup-title,.seminar-title {
+.cheers-title,
+.hackathon-title,
+.beginner-meetup-title,
+.seminar-title {
     position: relative;
     overflow: hidden;
     padding: 1.5rem 2rem 1.5rem 130px;
@@ -357,7 +386,10 @@ nav a {
     font-size: 32px;
 }
 
-.cheers-title:before,.hackathon-title:before,.beginner-meetup-title:before,.seminar-title:before {
+.cheers-title:before,
+.hackathon-title:before,
+.beginner-meetup-title:before,
+.seminar-title:before {
     position: absolute;
     top: -150%;
     left: -100px;
@@ -369,7 +401,10 @@ nav a {
     background: #000;
 }
 
-.cheers-title span,.hackathon-title span,.beginner-meetup-title span,.seminar-title span {
+.cheers-title span,
+.hackathon-title span,
+.beginner-meetup-title span,
+.seminar-title span {
     font-size: 3rem;
     position: absolute;
     z-index: 1;
@@ -390,8 +425,24 @@ nav a {
 .user-comment-title {
     font-size: 64px;
     text-align: center;
-    margin: 110px;
+    margin-top: 300px;
+    margin-bottom: 110px;
     color: #4b6f44;
+    position: relative;
+}
+
+.user-comment-title::before {
+    position: absolute;
+    top: -55px;
+    left: 50%;
+    transform: translateX(-50%);
+    color: #99FF99;
+    opacity: 0.5;
+    font-size: 150px;
+    text-transform: uppercase;
+    content: 'Voice';
+    z-index: -1;
+    letter-spacing: 24px;
 }
 
 .user-comment-flex-a {
@@ -457,7 +508,7 @@ nav a {
     display: flex;
     justify-content: center;
     align-items: center;
-    text-align: left; 
+    text-align: left;
     box-shadow: -10px -10px 15px 20px #8fbc8f;
 }
 
@@ -560,6 +611,21 @@ slider
     color: #4b6f44;
     /* display: inline-block; */
     padding-bottom: 8px;
+    position: relative;
+}
+
+.faq-title::before {
+    position: absolute;
+    top: -55px;
+    left: 50%;
+    transform: translateX(-50%);
+    color: #99FF99;
+    opacity: 0.5;
+    font-size: 150px;
+    text-transform: uppercase;
+    content: 'Question';
+    z-index: -1;
+    letter-spacing: 24px;
 }
 
 .faq-item {
@@ -578,7 +644,7 @@ slider
     font-weight: bold;
     color: #4b6f44;
     background-color: #eef5e9;
-    border-radius: 12px; 
+    border-radius: 12px;
     /*角が丸く見えるように内側も角丸くする*/
     cursor: pointer;
     /*カーソル合わせたら指差しになる*/
@@ -636,13 +702,14 @@ slider
     padding: 20px 30px;
     background-color: #fff;
     border-top: 1px solid #dbe8ce;
-    border-radius: 0 0 12px 12px; /*角が丸く見えるように内側も角丸くする、下部*/
+    border-radius: 0 0 12px 12px;
+    /*角が丸く見えるように内側も角丸くする、下部*/
     font-size: 20px;
     line-height: 1.6;
 }
 
 .faq-question.open .btn::after {
-    transform: scaleY(0); 
+    transform: scaleY(0);
     /* ＋→− の切り替えをここで制御できる */
 }
 
@@ -749,7 +816,7 @@ slider
     position: fixed;
     right: 10px;
     bottom: 20px;
-    background:#4b6f44;
+    background: #4b6f44;
     border-radius: 50%;
     z-index: 10;
 }
