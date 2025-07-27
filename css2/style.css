@@ -260,6 +260,8 @@ nav a {
 .about-text {
     text-align: center;
     margin: 110px;
+    font-size: 20px;
+    font-weight: bold;
 }
 
 
@@ -339,6 +341,7 @@ nav a {
     display: flex;
     justify-content: center;
     padding-top: 400px;
+    align-items: center;
 }
 
 .hackathon-flex,
@@ -347,6 +350,7 @@ nav a {
     display: flex;
     justify-content: center;
     padding-top: 50px;
+    align-items: center;
 }
 
 .cheers-image,
@@ -370,7 +374,8 @@ nav a {
 .beginner-meetup-text,
 .seminar-text {
     width: 50%;
-    color: #4b6f44;
+    color: #333;
+    font-size: 17px;
 }
 
 .cheers-title,
@@ -380,9 +385,9 @@ nav a {
     position: relative;
     overflow: hidden;
     padding: 1.5rem 2rem 1.5rem 130px;
-    border: 2px solid #000;
+    border: 2px solid #333;
     margin-bottom: 30px;
-    color: #000;
+    color: #333;
     font-size: 32px;
 }
 
@@ -398,7 +403,7 @@ nav a {
     content: '';
     -webkit-transform: rotate(25deg);
     transform: rotate(25deg);
-    background: #000;
+    background: #333;
 }
 
 .cheers-title span,
@@ -467,6 +472,8 @@ nav a {
 .user-comment-text-a {
     width: 40%;
     height: 300px;
+    font-size: 19px;
+    font-weight: bold;
     min-width: 0;
     padding: 8px;
     background-color: #66cdaa;
@@ -501,6 +508,8 @@ nav a {
 .user-comment-text-k {
     width: 40%;
     height: 300px;
+    font-size: 19px;
+    font-weight: bold;
     min-width: 0;
     padding: 8px;
     background-color: #66cdaa;
