@@ -1,52 +1,41 @@
 <!DOCTYPE html>
 <html lang="ja">
-    <head>
-        <meta charset="utf-8" />
-        <title>metaleaf</title>
-        <meta
-            name="description"
-            content="テキストテキストテキストテキストテキストテキストテキストテキスト"
-        />
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <link rel="shortcut icon" href="img/favicon.ico" />
-        <link
-            rel="stylesheet"
-            href="https://unpkg.com/ress/dist/ress.min.css"
-        />
 
-        <!-- google font埋め込み -->
-        <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-        <link
-            href="https://fonts.googleapis.com/css2?family=Zen+Maru+Gothic&display=swap"
-            rel="stylesheet"
-        />
+<head>
+    <meta charset="utf-8" />
+    <title>metaleaf</title>
+    <meta name="description" content="テキストテキストテキストテキストテキストテキストテキストテキスト" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="shortcut icon" href="img/favicon.ico" />
+    <link rel="stylesheet" href="https://unpkg.com/ress/dist/ress.min.css" />
 
-        <!-- 自作CSS読み込み -->
-        <link rel="stylesheet" href="css2/style.css" />
-    </head>
+    <!-- google font埋め込み -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Zen+Maru+Gothic&display=swap" rel="stylesheet" />
 
-    <body>
+    <!-- 自作CSS読み込み -->
+    <link rel="stylesheet" href="css2/style.css" />
+</head>
+
+<body>
+    <div class="loading" id="loading">
+        <div class="spinner"></div>
+        <p class="loading-text">Loading...</p>
+    </div>
+
+    <div class="content" id="content">
+
         <header>
             <div class="header-img">
                 <div class="header-line">
                     <h1>
-                        <a href="#"
-                            ><img
-                                src="image/スクリーンショット 2025-07-21 000555.png"
-                                alt=""
-                        /></a>
+                        <a href="#"><img src="image/スクリーンショット 2025-07-21 000555.png" alt="" /></a>
                     </h1>
                     <div class="btn-line">
                         <div class="act-btn">
-                            <a
-                                href="https://app.metalife.co.jp/spaces/cVNST2wTbk6XmjLxECkL"
-                                ><span>メタリーフに入る</span
-                                ><img
-                                    class="login-img"
-                                    src="image/ログインアイコン3.png"
-                                    alt=""
-                            /></a>
+                            <a href="https://app.metalife.co.jp/spaces"><span>メタリーフに入る</span><img class="login-img"
+                                    src="image/ログインアイコン3.png" alt="" /></a>
                         </div>
 
                         <div class="toggle-btn">
@@ -83,9 +72,7 @@
             </section>
 
             <section class="event wrapper">
-                <a href="event.html" target="_blank" class="into-event"
-                    >入会した人だけが体験できる<br />イベント盛りだくさん</a
-                >
+                <a href="event.html" target="_blank" class="into-event">入会した人だけが体験できる<br />イベント盛りだくさん</a>
             </section>
 
             <section id="voice" class="user-comment wrapper">
@@ -196,7 +183,7 @@
                 </div>
             </section>
 
-            <section id="contact" class=""></section>
+            <section id="contact" class="">
 
             <section class="contact wrapper">
                 <h2 class="contact-title">お問い合わせ</h2>
@@ -215,12 +202,7 @@
                     </div>
                     <div class="form-group">
                         <label for="message">お問い合わせ内容</label>
-                        <textarea
-                            id="message"
-                            name="message"
-                            rows="4"
-                            required
-                        ></textarea>
+                        <textarea id="message" name="message" rows="4" required></textarea>
                     </div>
                     <button type="submit" class="contact-submit">
                         送信する
@@ -238,5 +220,8 @@
 
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
         <script src="js/main.js"></script>
-    </body>
+
+    </div>
+</body>
+
 </html>
