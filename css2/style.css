@@ -348,12 +348,37 @@ nav a {
 }
 
 .cheers-title,.hackathon-title,.beginner-meetup-title,.seminar-title {
-    font-size: 56px;
-    color: #4b6f44;
-    text-decoration:underline ;
-    margin-bottom: 20px;
+    position: relative;
+    overflow: hidden;
+    padding: 1.5rem 2rem 1.5rem 130px;
+    border: 2px solid #000;
+    margin-bottom: 30px;
+    color: #000;
+    font-size: 32px;
 }
 
+.cheers-title:before,.hackathon-title:before,.beginner-meetup-title:before,.seminar-title:before {
+    position: absolute;
+    top: -150%;
+    left: -100px;
+    width: 200px;
+    height: 300%;
+    content: '';
+    -webkit-transform: rotate(25deg);
+    transform: rotate(25deg);
+    background: #000;
+}
+
+.cheers-title span,.hackathon-title span,.beginner-meetup-title span,.seminar-title span {
+    font-size: 3rem;
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    display: block;
+    padding-left: 16px;
+    color: #fff;
+}
 
 /*---------------------------------------------
  user-comment
