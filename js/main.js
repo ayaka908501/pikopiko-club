@@ -35,19 +35,23 @@ $(function () {
             scrollTop: 0
         }, 500); //0.5秒かけてトップへ移動
         return false;
+        });
+
     });
 
-    
     // アコーディオンメニュー
     $('.faq-question').on('click', function () {
         $(this).next('.faq-answer').stop().slideToggle(300);
         $(this).toggleClass('open');
     });
 
-
-});
+    // カーソルライト
+    document.addEventListener("mousemove", function (e) {
+        const cursor = document.querySelector(".cursor");
+        cursor.style.left = e.clientX + "px";
+        cursor.style.top = e.clientY + "px";
+    });
 
     
+});
 
-
-})
