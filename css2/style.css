@@ -518,10 +518,10 @@ nav a {
 }
 
 .user-comment-image-a {
-    width: 30%;
+    width: 50%;
     height: auto;
     text-align: right;
-    padding-right: 40px;
+    padding-right: 60px;
 }
 
 .user-comment-image-a img {
@@ -530,7 +530,7 @@ nav a {
 }
 
 .user-comment-text-a {
-    width: 40%;
+    /* width: 40%;
     height: 300px;
     font-size: 19px;
     font-weight: bold;
@@ -541,8 +541,13 @@ nav a {
     display: flex;
     justify-content: center;
     align-items: center;
-    text-align: left;
-    box-shadow: 10px 10px 15px 20px #8fbc8f;
+    text-align: center;
+    box-shadow: 10px 10px 15px 20px #8fbc8f; */
+    margin: 0 auto 2em 0; /* 外側の余白（上下と中央配置） */
+    padding: 2em;   /* 内側余白 */
+    border-radius: 30px 60px / 60px 30px;  /* 角をランダムに丸めて手書き風に */
+    border: solid 8px #90cc68;   /* 太めの枠線（8px、色: #ccc7be） */
+    text-align: center;
 }
 
 .user-comment-flex-k {
@@ -554,10 +559,11 @@ nav a {
 }
 
 .user-comment-image-k {
-    width: 30%;
+    width: 50%;
     height: auto;
     text-align: left;
-    padding-left: 40px;
+    padding-left: 60px;
+    
 }
 
 .user-comment-image-k img {
@@ -566,7 +572,7 @@ nav a {
 }
 
 .user-comment-text-k {
-    width: 40%;
+    /* width: 40%;
     height: 300px;
     font-size: 19px;
     font-weight: bold;
@@ -577,8 +583,13 @@ nav a {
     display: flex;
     justify-content: center;
     align-items: center;
-    text-align: left;
-    box-shadow: -10px -10px 15px 20px #8fbc8f;
+    text-align: center;
+    box-shadow: -10px -10px 15px 20px #8fbc8f; */
+    margin: 0 0 2em auto; 
+    padding: 2em; 
+    border-radius: 30px 60px / 60px 30px;  
+    border: solid 8px #90cc68;
+    text-align: center;
 }
 
 .readmore-btn-container {
