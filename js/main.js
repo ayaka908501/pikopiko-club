@@ -59,6 +59,13 @@ $(function () {
 
     });
 
+    // 利用者の声
+$(function () {
+    $('.readmore-btn').on('click', function () {
+      $('.readmore-content').slideToggle(500);
+    });
+  });
+
     // アコーディオンメニュー
     $('.faq-question').on('click', function () {
         $(this).next('.faq-answer').stop().slideToggle(300);

@@ -1,116 +1,125 @@
 <!DOCTYPE html>
 <html lang="ja">
+    <head>
+        <meta charset="utf-8" />
+        <title>event</title>
+        <meta
+            name="description"
+            content="テキストテキストテキストテキストテキストテキストテキストテキスト"
+        />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <link rel="shortcut icon" href="img/favicon.ico" />
+        <link
+            rel="stylesheet"
+            href="https://unpkg.com/ress/dist/ress.min.css"
+        />
 
-<head>
-    <meta charset="utf-8" />
-    <title>event</title>
-    <meta name="description" content="テキストテキストテキストテキストテキストテキストテキストテキスト" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link rel="shortcut icon" href="img/favicon.ico" />
-    <link rel="stylesheet" href="https://unpkg.com/ress/dist/ress.min.css" />
+        <!-- google font埋め込み -->
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Zen+Maru+Gothic&display=swap"
+            rel="stylesheet"
+        />
+        <!-- 自作CSS読み込み -->
+        <link rel="stylesheet" href="css2/style.css" />
+    </head>
 
-    <!-- google font埋め込み -->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Zen+Maru+Gothic&display=swap" rel="stylesheet" />
-    <!-- 自作CSS読み込み -->
-    <link rel="stylesheet" href="css2/style.css" />
-</head>
-
-
-<body class="eventpage-only">
-    <header>
-        <div class="header-line">
-            <h1>
-                <a href="index.html"><img src="image/スクリーンショット 2025-07-21 000555.png" alt="" /></a>
-            </h1>
-            <div class="toggle-btn">
-                <span></span>
-                <span></span>
+    <body class="eventpage-only">
+        <header>
+            <div class="header-line">
+                <h1>
+                    <a href="index.html"
+                        ><img
+                            src="image/スクリーンショット 2025-07-21 000555.png"
+                            alt=""
+                    /></a>
+                </h1>
+                <div class="toggle-btn">
+                    <span></span>
+                    <span></span>
+                </div>
+                <nav>
+                    <ul class="nav-menu">
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#voice">Voice</a></li>
+                        <li><a href="#faq">Question</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </nav>
+                <div class="mask"></div>
             </div>
-            <nav>
-                <ul class="nav-menu">
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#voice">Voice</a></li>
-                    <li><a href="#faq">Question</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                </ul>
-            </nav>
-            <div class="mask"></div>
-        </div>
+        </header>
 
-    </header>
+        <main>
+            <div class="event-page">
+                <section class="event-detail">
+                    <h2 class="event-detail-title">イベント</h2>
+                    <div class="event-detail-image">
+                        <img src="image/about-seminar.png" alt="" />
+                    </div>
+                </section>
+                <div class="cheers-flex wrapper">
+                    <div class="cheers-image">
+                        <img src="image/cheers.jpg" alt="kanpai" />
+                    </div>
+                    <div class="cheers-text">
+                        <h2 class="cheers-title">
+                            <span>01</span>オンライン飲み会
+                        </h2>
+                        <p>
+                            初めての人も大歓迎！<br />アバターでの参加・顔出しも自由です。<br />お好きな飲み物（アルコールでも、ジュースでも、お茶でもOK！）で乾杯！<br />まずは簡単なミニゲームでわいわいアイスブレイク。<br />そのあとは、それぞれの目標や今取り組んでいることをシェアして、<br />「これからどう動くか」をみんなで宣言していく会です。
+                        </p>
+                    </div>
+                </div>
 
-    <main>
-        <div class="event-page">
-            <section class="event-detail">
-                <h2 class="event-detail-title">イベント</h2>
-                <div class="event-detail-image">
-                    <img src="image/about-seminar.png" alt="" />
+                <div class="hackathon-flex wrapper">
+                    <div class="hackathon-image">
+                        <img src="image/hackathon2.jpg" alt="hackathon" />
+                    </div>
+                    <div class="hackathon-text">
+                        <h2 class="hackathon-title">
+                            <span>02</span>ハッカソン
+                        </h2>
+                        <p>
+                            3人1組でチームを組んで、<br />短期間でWebサイトやアプリを開発するイベントです。<br />ゼロからつくる経験、仲間との協力、完成したときの達成感──<br />「共同開発体験」をここで。<br />メンバーで助け合いながら進めていくので、大きな成長につながります。
+                        </p>
+                    </div>
                 </div>
-            </section>
-            <div class="cheers-flex wrapper">
-                <div class="cheers-image">
-                    <img src="image/cheers.jpg" alt="kanpai" />
-                </div>
-                <div class="cheers-text">
-                    <h2 class="cheers-title"><span>01</span>オンライン飲み会</h2>
-                    <p>
-                        初めての人も大歓迎！<br>アバターでの参加・顔出しも自由です。<br>お好きな飲み物（アルコールでも、ジュースでも、お茶でもOK！）で乾杯！<br>まずは簡単なミニゲームでわいわいアイスブレイク。<br>そのあとは、それぞれの目標や今取り組んでいることをシェアして、<br>「これからどう動くか」をみんなで宣言していく会です。
-                    </p>
-                </div>
-            </div>
 
-            <div class="hackathon-flex wrapper">
-                <div class="hackathon-image">
-                    <img src="image/hackathon2.jpg" alt="hackathon" />
+                <div class="beginner-meetup-flex wrapper">
+                    <div class="beginner-meetup-image">
+                        <img src="image/beginner-meetup.jpg" alt="meetup" />
+                    </div>
+                    <div class="beginner-meetup-text">
+                        <h2 class="beginner-meetup-title">
+                            <span>03</span>初心者交流会
+                        </h2>
+                        <p>
+                            メタリーフの使い方がまだよくわからない初心者の方に向けた説明会です。<br />毎週1回、メタリーフはじめましての人同士が集まり、<br />メタリーフの基本的な使い方や不安な点を一緒に確認できます。<br />「こんなこと聞いてもいいの？」ということでも、遠慮なく質問できる会です。
+                        </p>
+                    </div>
+                </div>
 
-                </div>
-                <div class="hackathon-text">
-                    <h2 class="hackathon-title"><span>02</span>ハッカソン</h2>
-                    <p>
-                        3人1組でチームを組んで、<br>短期間でWebサイトやアプリを開発するイベントです。<br>ゼロからつくる経験、仲間との協力、完成したときの達成感──<br>「共同開発体験」をここで。<br>メンバーで助け合いながら進めていくので、大きな成長につながります。
-                    </p>
-
-                </div>
-            </div>
-
-            <div class="beginner-meetup-flex wrapper">
-                <div class="beginner-meetup-image">
-                    <img src="image/beginner-meetup.jpg" alt="meetup" />
-                </div>
-                <div class="beginner-meetup-text">
-                    <h2 class="beginner-meetup-title"><span>03</span>初心者交流会</h2>
-                    <p>
-                        テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト
-                    </p>
-                </div>
-            </div>
-
-            <div class="seminar-flex wrapper">
-                <div class="seminar-image">
-                    <img src="image/seminar.jpg" alt="seminar" />
-                </div>
-                <div class="seminar-text">
-                    <h2 class="seminar-title"><span>04</span>セミナー</h2>
-                    <p>
-                        テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト
-                    </p>
+                <div class="seminar-flex wrapper">
+                    <div class="seminar-image">
+                        <img src="image/seminar.jpg" alt="seminar" />
+                    </div>
+                    <div class="seminar-text">
+                        <h2 class="seminar-title"><span>04</span>セミナー</h2>
+                        <p>
+                            毎週月曜日に、学びのモチベーションを高めたい方や、<br />自分を成長させたい方に向けたセミナーを開催しています。<br />セミナーでは、学習を効率よく進めるためのコツ、<br />モチベーションに振り回されないマインドセット、<br />実際に成果を出している人たちの体験談などをテーマに、<br />毎週さまざまなお話をお届けしています。<br />「もっと上手に勉強したい」<br />「目標に向かって頑張りたいけど、ちょっと不安」<br />そんな方にぴったりの会です。
+                        </p>
+                    </div>
                 </div>
             </div>
+        </main>
 
+        <footer>
+            <p>&copy; 2025 metaleaf</p>
+        </footer>
 
-        </div>
-    </main>
-
-    <footer>
-        <p>&copy; 2025 metaleaf</p>
-    </footer>
-
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script src="js/main.js"></script>
-
-
-</body>
-
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="js/main.js"></script>
+    </body>
 </html>
