@@ -40,7 +40,7 @@ $(function () {
 
     //Topへ戻るボタン
 
-    jQuery(function() {
+   
         var pagetop = $('.page_top');   
         pagetop.hide();
         $(window).scroll(function () {
@@ -57,10 +57,10 @@ $(function () {
             return false;
         });
 
-    });
+
 
     // 利用者の声
-$(function () {
+
     $('.readmore-btn').on('click', function () {
       $('.readmore-content').slideToggle(500);
     });
@@ -80,7 +80,6 @@ $(function () {
     });
 
     
-});
 
 
 
