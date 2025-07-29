@@ -651,13 +651,16 @@ slider
  ---------------------------------------------*/
 .faq {
     max-width: 900px;
-    margin: 80px auto;
-    padding: 20px;
+}
+
+#faq {
+    margin-bottom: 200px;
 }
 
 .faq-title {
     text-align: center;
-    margin: 110px;
+    margin-bottom: 80px;
+    margin-top: 30px;
     font-size: 64px;
     color: #4b6f44;
     /* display: inline-block; */
@@ -778,10 +781,10 @@ slider
 
 /*---------------------------------------------
  contact
- ---------------------------------------------*/
+ ---------------------------------------------*/ 
 .contact {
     max-width: 700px;
-    margin: 110px auto;
+    margin: 130px auto;
     padding: 20px 20px;
     background-color: #f9fbf6;
     border: 3px solid #dbe8ce;
@@ -937,7 +940,7 @@ footer {
     position: absolute;
     bottom: 0;
     width: 100%;
-    margin-bottom: -110px;
+    margin-bottom: -160px;
 }
 
 .event-footer {
