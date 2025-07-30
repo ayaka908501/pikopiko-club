@@ -1,326 +1,353 @@
 <!DOCTYPE html>
 <html lang="ja">
+    <head>
+        <meta charset="utf-8" />
+        <title>What’s MetaLeaf?</title>
+        <meta name="description" content="MetaLeafの紹介サイト" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <link rel="shortcut icon" href="img/favicon.ico" />
+        <link
+            rel="stylesheet"
+            href="https://unpkg.com/ress/dist/ress.min.css"
+        />
 
-<head>
-    <meta charset="utf-8" />
-    <title>metaleaf</title>
-    <meta name="description" content="テキストテキストテキストテキストテキストテキストテキストテキスト" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link rel="shortcut icon" href="img/favicon.ico" />
-    <link rel="stylesheet" href="https://unpkg.com/ress/dist/ress.min.css" />
+        <!-- google font埋め込み -->
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Zen+Maru+Gothic&display=swap"
+            rel="stylesheet"
+        />
 
-    <!-- google font埋め込み -->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Zen+Maru+Gothic&display=swap" rel="stylesheet" />
+        <!-- 自作CSS読み込み -->
+        <link rel="stylesheet" href="css2/style.css" />
+    </head>
 
-    <!-- 自作CSS読み込み -->
-    <link rel="stylesheet" href="css2/style.css" />
-</head>
+    <body>
+        <div class="loading" id="loading">
+            <div class="spinner"></div>
+            <p class="loading-text">Loading...</p>
+        </div>
 
-<body>
-    <div class="loading" id="loading">
-        <div class="spinner"></div>
-        <p class="loading-text">Loading...</p>
-    </div>
+        <div class="content" id="content">
+            <header>
+                <div class="header-img">
+                    <div class="header-line">
+                        <h1>
+                            <a href="#"
+                                ><img
+                                    src="image/スクリーンショット 2025-07-21 000555.png"
+                                    alt=""
+                            /></a>
+                        </h1>
+                        <div class="btn-line">
+                            <div class="act-btn">
+                                <a href="https://app.metalife.co.jp/spaces"
+                                    ><span>メタリーフに入る</span
+                                    ><img
+                                        class="login-img"
+                                        src="image/ログインアイコン3.png"
+                                        alt=""
+                                /></a>
+                            </div>
 
-    <div class="content" id="content">
-        <header>
-            <div class="header-img">
-                <div class="header-line">
-                    <h1>
-                        <a href="#"><img src="image/スクリーンショット 2025-07-21 000555.png" alt="" /></a>
-                    </h1>
-                    <div class="btn-line">
-                        <div class="act-btn">
-                            <a href="https://app.metalife.co.jp/spaces"><span>メタリーフに入る</span><img class="login-img"
-                                    src="image/ログインアイコン3.png" alt="" /></a>
+                            <div class="toggle-btn">
+                                <span></span>
+                                <span></span>
+                            </div>
+                            <nav>
+                                <ul class="nav-menu">
+                                    <li><a href="#about">About</a></li>
+                                    <li><a href="#voice">Voice</a></li>
+                                    <li><a href="#gallery">Gallery</a></li>
+                                    <li><a href="#faq">Question</a></li>
+                                    <li><a href="#contact">Contact</a></li>
+                                </ul>
+                            </nav>
+                            <div class="mask"></div>
                         </div>
-
-                        <div class="toggle-btn">
-                            <span></span>
-                            <span></span>
-                        </div>
-                        <nav>
-                            <ul class="nav-menu">
-                                <li><a href="#about">About</a></li>
-                                <li><a href="#voice">Voice</a></li>
-                                <li><a href="#gallery">Gallery</a></li>
-                                <li><a href="#faq">Question</a></li>
-                                <li><a href="#contact">Contact</a></li>
-                            </ul>
-                        </nav>
-                        <div class="mask"></div>
                     </div>
                 </div>
-            </div>
-            <div class="about-lead">
-                <p>
-                    目標はそれぞれ<br />目標に向かって頑張りたい気持ちは同じ<br />そんな人たちが集まる場所
-                </p>
-            </div>
-        </header>
-
-        <main>
-            <section id="about" class="about wrapper">
-                <h2 class="about-title">メタリーフって？</h2>
-                <div class="about-text">
+                <div class="about-lead">
                     <p>
-                        メタリーフは、勉強をがんばる仲間たちが、それぞれのフェーズで集い、<br />集中したり、雑談したり、分からないことを気軽に聞き合ったり──自然に切磋琢磨できる場所です。<br />ちょっと勇気を出して声をかけてみると、予想もしなかったヒントや刺激が得られるかもしれません。<br />ひとりじゃ続かないときも、誰かのがんばりが自分の背中を押してくれる。<br />ここは、学ぶ人たちが、互いに学び合い、高め合うためのもうひとつの居場所です。
+                        目標はそれぞれ<br />目標に向かって頑張りたい気持ちは同じ<br />そんな人たちが集まる場所
                     </p>
                 </div>
-            </section>
+            </header>
 
-            <section class="event wrapper">
-                <a href="event.html" target="_blank" class="into-event">入会した人だけが体験できる<br />イベント盛りだくさん</a>
-            </section>
-
-            <section id="voice" class="user-comment wrapper">
-                <h2 class="user-comment-title">利用者の声</h2>
-                <div class="user-comment-flex-a">
-                    <div class="user-comment-image-a">
-                        <img src="./image/icon1.png" alt="icon" />
-                    </div>
-                    <div class="user-comment-text-a">
+            <main>
+                <section id="about" class="about wrapper">
+                    <h2 class="about-title">メタリーフって？</h2>
+                    <div class="about-text">
                         <p>
-                            ひとりだと集中が続かないタイプですが、<br />メタリーフに入って誰かと一緒に作業してると思うと、<br />なぜかやる気が出ます！<br />分からないところを聞けるのもありがたいし、<br />ちょっとした雑談もリフレッシュになってます。
+                            メタリーフは、勉強をがんばる仲間たちが、それぞれのフェーズで集い、<br />集中したり、雑談したり、分からないことを気軽に聞き合ったり──自然に切磋琢磨できる場所です。<br />ちょっと勇気を出して声をかけてみると、予想もしなかったヒントや刺激が得られるかもしれません。<br />ひとりじゃ続かないときも、誰かのがんばりが自分の背中を押してくれる。<br />ここは、学ぶ人たちが、互いに学び合い、高め合うためのもうひとつの居場所です。
                         </p>
                     </div>
-                </div>
-                <div class="user-comment-flex-k">
-                    <div class="user-comment-image-k">
-                        <img src="./image/icon2.png" alt="icon" />
-                    </div>
-                    <div class="user-comment-text-k">
-                        <p>
-                            普段はひとりで作業しているのですが、<br />ここに来ると“教えること”で<br />自分の理解が深まることに気づきました。<br />ただの作業場じゃなくて、<br />“学び合える場所”になってるのがすごくいいですね。
-                        </p>
-                    </div>
-                </div>
+                </section>
 
+                <section class="event wrapper">
+                    <a href="event.html" target="_blank" class="into-event"
+                        >入会した人だけが体験できる<br />イベント盛りだくさん</a
+                    >
+                </section>
 
-                <!-- read more ボタン -->
-                <div class="readmore-btn-container">
-                    <button class="readmore-btn">Readmore</button>
-                </div>
-
-                <!-- アコーディオンで出す同じ内容 -->
-                <div class="readmore-content">
+                <section id="voice" class="user-comment wrapper">
+                    <h2 class="user-comment-title">利用者の声</h2>
                     <div class="user-comment-flex-a">
                         <div class="user-comment-image-a">
-                            <img src="./image/icon8.png" alt="icon" />
+                            <img src="./image/icon14.png" alt="icon" />
                         </div>
                         <div class="user-comment-text-a">
                             <p>
-                                勉強していて、あるところでどうしてもつまづいてしまったんです。<br />だんだん「自分だけがわからないのかも」と不安になってきて…。<br />でも、近くにいた周りの方に思いきって聞いてみたら、<br />なんとみんな同じところで悩んでて驚きました。<br />「自分だけじゃないんだ」って思えた瞬間、<br />すごくホッとしたし、少し勇気もわいてきました。<br />ひとりで黙々とやる勉強とは全然違って、<br />誰かとつながって学ぶことの心強さを実感できました。<br />
+                                ひとりだと集中が続かないタイプですが、<br />メタリーフに入って誰かと一緒に作業してると思うと、<br />なぜかやる気が出ます！<br />分からないところを聞けるのもありがたいし、<br />ちょっとした雑談もリフレッシュになってます。
                             </p>
                         </div>
                     </div>
-
                     <div class="user-comment-flex-k">
                         <div class="user-comment-image-k">
-                            <img src="./image/icon3.png" alt="icon" />
+                            <img src="./image/icon17.png" alt="icon" />
                         </div>
                         <div class="user-comment-text-k">
                             <p>
-                                これまでは、やる気が出ない日があると<br />全然勉強が手につかなくて、「今日はもう無理だな…」<br />ってあきらめてしまうこともよくありました。<br />でも、ここに来ると不思議と手が動くというか、<br />気づいたら自然に始められるんです。<br />誰かがいる空気に引っ張られて、<br />ゆるく声をかけ合える安心感のおかげで、<br />「やる気がある日」じゃなくても続けられる。<br />気分に左右されすぎず、自分のペースで<br />コツコツ続けられるようになりました。<br />
+                                普段はひとりで作業しているのですが、<br />ここに来ると“教えること”で<br />自分の理解が深まることに気づきました。<br />ただの作業場じゃなくて、<br />“学び合える場所”になってるのがすごくいいですね。
                             </p>
                         </div>
                     </div>
-                </div>
-            </section>
 
-            <div class="slider">
-                <div class="track">
-                    <img src="./image/icon1.png" alt="" />
-                    <img src="./image/icon2.png" alt="" />
-                    <img src="./image/icon3.png" alt="" />
-                    <img src="./image/icon4.png" alt="" />
-                    <img src="./image/icon5.png" alt="" />
-                    <img src="./image/icon6.png" alt="" />
-                    <img src="./image/icon7.png" alt="" />
-                    <img src="./image/icon1.png" alt="" />
-                    <img src="./image/icon2.png" alt="" />
-                    <img src="./image/icon3.png" alt="" />
-                    <img src="./image/icon4.png" alt="" />
-                    <img src="./image/icon5.png" alt="" />
-                    <img src="./image/icon6.png" alt="" />
-                    <img src="./image/icon7.png" alt="" />
-                    <img src="./image/icon1.png" alt="" />
-                    <img src="./image/icon2.png" alt="" />
-                    <img src="./image/icon3.png" alt="" />
-                    <img src="./image/icon4.png" alt="" />
-                    <img src="./image/icon5.png" alt="" />
-                    <img src="./image/icon6.png" alt="" />
-                    <img src="./image/icon7.png" alt="" />
-                </div>
-            </div>
+                    <!-- read more ボタン -->
+                    <div class="readmore-btn-container">
+                        <button class="readmore-btn">Readmore</button>
+                    </div>
 
-
-            <section id="gallery">
-                <h2 class="gallery-title">メタリーフの日常</h2>
-
-                <div class="gallery-slider">
-                    <div class="gallery-track">
-                        <div class="gallery-item">
-                            <img src="image/image_13.png" alt="" />
-                            <p>セミナーは100名以上参加することも！</p>
-                        </div>
-                        <div class="gallery-item">
-                            <img src="image/image_38.png" alt="" />
-                            <p>質問会で今すぐ知りたい疑問を解決！</p>
-                        </div>
-                        <div class="gallery-item">
-                            <img src="image/image_20.png" alt="" />
-                            <p>雑談したり！</p>
-                        </div>
-                        <div class="gallery-item">
-                            <img src="image/image_28.png" alt="" />
-                            <p>意見交換したり！</p>
-                        </div>
-                        <div class="gallery-item">
-                            <img src="image/image_24.png" alt="" />
-                            <p>初心者同士交流したり！</p>
-                        </div>
-                        <div class="gallery-item">
-                            <img src="image/image_23.png" alt="" />
-                            <p>カメラはオンでもオフでも！</p>
-                        </div>
-                        <div class="gallery-item">
-                            <img src="image/image_7.png" alt="" />
-                            <p>集中したい方にはモクモクスペースも！</p>
+                    <!-- アコーディオンで出す内容 -->
+                    <div class="readmore-content">
+                        <div class="user-comment-flex-a">
+                            <div class="user-comment-image-a">
+                                <img src="./image/icon16.png" alt="icon" />
+                            </div>
+                            <div class="user-comment-text-a">
+                                <p>
+                                    勉強していて、あるところでどうしてもつまづいてしまったんです。<br />だんだん「自分だけがわからないのかも」と不安になってきて…。<br />でも、近くにいた周りの方に思いきって聞いてみたら、<br />なんとみんな同じところで悩んでて驚きました。<br />「自分だけじゃないんだ」って思えた瞬間、<br />すごくホッとしたし、少し勇気もわいてきました。<br />ひとりで黙々とやる勉強とは全然違って、<br />誰かとつながって学ぶことの心強さを実感できました。<br />
+                                </p>
+                            </div>
                         </div>
 
-                        <!-- ループ用に下記複製 -->
-                        <div class="gallery-item">
-                            <img src="image/image_13.png" alt="" />
-                            <p>セミナーは100名以上参加することも！</p>
+                        <div class="user-comment-flex-k">
+                            <div class="user-comment-image-k">
+                                <img src="./image/icon12.png" alt="icon" />
+                            </div>
+                            <div class="user-comment-text-k">
+                                <p>
+                                    これまでは、やる気が出ない日があると<br />全然勉強が手につかなくて、「今日はもう無理だな…」<br />ってあきらめてしまうこともよくありました。<br />でも、ここに来ると不思議と手が動くというか、<br />気づいたら自然に始められるんです。<br />誰かがいる空気に引っ張られて、<br />ゆるく声をかけ合える安心感のおかげで、<br />「やる気がある日」じゃなくても続けられる。<br />気分に左右されすぎず、自分のペースで<br />コツコツ続けられるようになりました。<br />
+                                </p>
+                            </div>
                         </div>
-                        <div class="gallery-item">
-                            <img src="image/image_38.png" alt="" />
-                            <p>質問会で今すぐ知りたい疑問を解決！</p>
-                        </div>
-                        <div class="gallery-item">
-                            <img src="image/image_20.png" alt="" />
-                            <p>雑談したり！</p>
-                        </div>
-                        <div class="gallery-item">
-                            <img src="image/image_28.png" alt="" />
-                            <p>意見交換したり！</p>
-                        </div>
-                        <div class="gallery-item">
-                            <img src="image/image_24.png" alt="" />
-                            <p>初心者同士交流したり！</p>
-                        </div>
-                        <div class="gallery-item">
-                            <img src="image/image_23.png" alt="" />
-                            <p>カメラはオンでもオフでも！</p>
-                        </div>
-                        <div class="gallery-item">
-                            <img src="image/image_7.png" alt="" />
-                            <p>集中したい方にはモクモクスペースも！</p>
-                        </div>
+                    </div>
+                </section>
+
+                <div class="slider">
+                    <div class="track">
+                        <img src="./image/icon12.png" alt="" />
+                        <img src="./image/icon13.png" alt="" />
+                        <img src="./image/icon14.png" alt="" />
+                        <img src="./image/icon15.png" alt="" />
+                        <img src="./image/icon16.png" alt="" />
+                        <img src="./image/icon17.png" alt="" />
+                        <img src="./image/icon18.png" alt="" />
+                        <img src="./image/icon12.png" alt="" />
+                        <img src="./image/icon13.png" alt="" />
+                        <img src="./image/icon14.png" alt="" />
+                        <img src="./image/icon15.png" alt="" />
+                        <img src="./image/icon16.png" alt="" />
+                        <img src="./image/icon17.png" alt="" />
+                        <img src="./image/icon18.png" alt="" />
+                        <img src="./image/icon12.png" alt="" />
+                        <img src="./image/icon13.png" alt="" />
+                        <img src="./image/icon14.png" alt="" />
+                        <img src="./image/icon15.png" alt="" />
+                        <img src="./image/icon16.png" alt="" />
+                        <img src="./image/icon17.png" alt="" />
+                        <img src="./image/icon18.png" alt="" />
                     </div>
                 </div>
-            </section>
 
-            <section id="faq" class="faq wrapper">
-                <h2 class="faq-title">質問と回答</h2>
+                <section id="gallery">
+                    <h2 class="gallery-title">メタリーフの日常</h2>
 
-                <div class="faq-item">
-                    <div class="faq-question">
-                        <span class="btn"></span>作業会参加までの流れは？
-                    </div>
-                    <div class="faq-answer">
-                        <ol start="1">
-                            <li>専用LINEを追加！</li>
-                            <li>
-                                メニューから作業会参加費の決済をして、LINEに「申込完了」と送る！
-                            </li>
-                            <li>
-                                送られてくる【作業会参加リンク】のURLを開いて参加！
-                            </li>
-                        </ol>
-                    </div>
-                </div>
-                <div class="faq-item">
-                    <div class="faq-question">
-                        <span class="btn"></span>何時から何時までやってるの？
-                    </div>
-                    <div class="faq-answer">
-                        <p>
-                            朝5時から翌日1時まで開放してるから、朝活やお仕事終わり、休日も参加できちゃう！<br />講師の方がいてくれる時間もあるので、困った時に相談しやすいよ！
-                        </p>
-                    </div>
-                </div>
-                <div class="faq-item">
-                    <div class="faq-question">
-                        <span class="btn"></span>初参加で何したらいいかわからない時は？
-                    </div>
-                    <div class="faq-answer">
-                        <p>
-                            慣れないうちは参加名に「😢」マークをつけてくれたら、声をかけてもらえることも！<br />モクモク作業部屋もあるから、話したいわけじゃないけど集中して作業したい時も参加できるよ！<br />外出中で声が出せない時は耳だけ参加もOKです！
-                        </p>
-                    </div>
-                </div>
-                <div class="faq-item">
-                    <div class="faq-question">
-                        <span class="btn"></span>知り合いがいないけど、いきなり話しかけてもいいの？
-                    </div>
-                    <div class="faq-answer">
-                        <p>
-                            もちろん皆んなの交流の場なので話しかけて大丈夫！<br />参加名に講師の方だったり、どのフェーズの勉強中かを書いてる方がいるので、講師や同じフェーズの方、初心者の方、先輩方とどんどん交流してね！
-                        </p>
-                    </div>
-                </div>
-                <div class="faq-item">
-                    <div class="faq-question">
-                        <span class="btn"></span>みんな本当に存在してる方々？
-                    </div>
-                    <div class="faq-answer">
-                        <p>
-                            皆んな全国、国内外に実在している方達です◎<br />オフラインはもちろん、オンラインで参加してる方もいるので、画面越しに顔を見て挨拶もできるよ！
-                        </p>
-                    </div>
-                </div>
-            </section>
+                    <div class="gallery-slider">
+                        <div class="gallery-track">
+                            <div class="gallery-item">
+                                <img src="image/image_13.png" alt="" />
+                                <p>セミナーは100名以上参加することも！</p>
+                            </div>
+                            <div class="gallery-item">
+                                <img src="image/image_38.png" alt="" />
+                                <p>質問会で今すぐ知りたい疑問を解決！</p>
+                            </div>
+                            <div class="gallery-item">
+                                <img src="image/image_20.png" alt="" />
+                                <p>雑談したり！</p>
+                            </div>
+                            <div class="gallery-item">
+                                <img src="image/image_28.png" alt="" />
+                                <p>意見交換したり！</p>
+                            </div>
+                            <div class="gallery-item">
+                                <img src="image/image_24.png" alt="" />
+                                <p>初心者同士交流したり！</p>
+                            </div>
+                            <div class="gallery-item">
+                                <img src="image/image_23.png" alt="" />
+                                <p>カメラはオンでもオフでも！</p>
+                            </div>
+                            <div class="gallery-item">
+                                <img src="image/image_7.png" alt="" />
+                                <p>集中したい方にはモクモクスペースも！</p>
+                            </div>
 
-            <section id="contact" class="contact wrapper">
-                <h2 class="contact-title">お問い合わせ</h2>
-                <form class="contact-form">
-                    <div class="form-group">
-                        <label for="name">お名前</label>
-                        <input type="text" id="name" name="name" required />
+                            <!-- ループ用に下記複製 -->
+                            <div class="gallery-item">
+                                <img src="image/image_13.png" alt="" />
+                                <p>セミナーは100名以上参加することも！</p>
+                            </div>
+                            <div class="gallery-item">
+                                <img src="image/image_38.png" alt="" />
+                                <p>質問会で今すぐ知りたい疑問を解決！</p>
+                            </div>
+                            <div class="gallery-item">
+                                <img src="image/image_20.png" alt="" />
+                                <p>雑談したり！</p>
+                            </div>
+                            <div class="gallery-item">
+                                <img src="image/image_28.png" alt="" />
+                                <p>意見交換したり！</p>
+                            </div>
+                            <div class="gallery-item">
+                                <img src="image/image_24.png" alt="" />
+                                <p>初心者同士交流したり！</p>
+                            </div>
+                            <div class="gallery-item">
+                                <img src="image/image_23.png" alt="" />
+                                <p>カメラはオンでもオフでも！</p>
+                            </div>
+                            <div class="gallery-item">
+                                <img src="image/image_7.png" alt="" />
+                                <p>集中したい方にはモクモクスペースも！</p>
+                            </div>
+                        </div>
                     </div>
-                    <div class="form-group">
-                        <label for="email">メールアドレス</label>
-                        <input type="email" id="email" name="email" required />
+                </section>
+
+                <section id="faq" class="faq wrapper">
+                    <h2 class="faq-title">質問と回答</h2>
+
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            <span class="btn"></span>作業会参加までの流れは？
+                        </div>
+                        <div class="faq-answer">
+                            <ol start="1">
+                                <li>専用LINEを追加！</li>
+                                <li>
+                                    メニューから作業会参加費の決済をして、LINEに「申込完了」と送る！
+                                </li>
+                                <li>
+                                    送られてくる【作業会参加リンク】のURLを開いて参加！
+                                </li>
+                            </ol>
+                        </div>
                     </div>
-                    <div class="form-group">
-                        <label for="tel">電話番号</label>
-                        <input type="tel" id="tel" name="tel" required />
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            <span class="btn"></span
+                            >何時から何時までやってるの？
+                        </div>
+                        <div class="faq-answer">
+                            <p>
+                                朝5時から翌日1時まで開放してるから、朝活やお仕事終わり、休日も参加できちゃう！<br />講師の方がいてくれる時間もあるので、困った時に相談しやすいよ！
+                            </p>
+                        </div>
                     </div>
-                    <div class="form-group">
-                        <label for="message">お問い合わせ内容</label>
-                        <textarea id="message" name="message" rows="4" required></textarea>
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            <span class="btn"></span
+                            >初参加で何したらいいかわからない時は？
+                        </div>
+                        <div class="faq-answer">
+                            <p>
+                                慣れないうちは参加名に「😢」マークをつけてくれたら、声をかけてもらえることも！<br />モクモク作業部屋もあるから、話したいわけじゃないけど集中して作業したい時も参加できるよ！<br />外出中で声が出せない時は耳だけ参加もOKです！
+                            </p>
+                        </div>
                     </div>
-                    <button type="submit" class="contact-submit">
-                        送信する
-                    </button>
-                </form>
-            </section>
-            <div class="cursor"></div>
-        </main>
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            <span class="btn"></span
+                            >知り合いがいないけど、いきなり話しかけてもいいの？
+                        </div>
+                        <div class="faq-answer">
+                            <p>
+                                もちろん皆んなの交流の場なので話しかけて大丈夫！<br />参加名に講師の方だったり、どのフェーズの勉強中かを書いてる方がいるので、講師や同じフェーズの方、初心者の方、先輩方とどんどん交流してね！
+                            </p>
+                        </div>
+                    </div>
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            <span class="btn"></span
+                            >みんな本当に存在してる方々？
+                        </div>
+                        <div class="faq-answer">
+                            <p>
+                                皆んな全国、国内外に実在している方達です◎<br />オフラインはもちろん、オンラインで参加してる方もいるので、画面越しに顔を見て挨拶もできるよ！
+                            </p>
+                        </div>
+                    </div>
+                </section>
 
-        <div class="page_top"><a href="#"></a></div>
+                <section id="contact" class="contact wrapper">
+                    <h2 class="contact-title">お問い合わせ</h2>
+                    <form class="contact-form">
+                        <div class="form-group">
+                            <label for="name">お名前</label>
+                            <input type="text" id="name" name="name" required />
+                        </div>
+                        <div class="form-group">
+                            <label for="email">メールアドレス</label>
+                            <input
+                                type="email"
+                                id="email"
+                                name="email"
+                                required
+                            />
+                        </div>
+                        <div class="form-group">
+                            <label for="tel">電話番号</label>
+                            <input type="tel" id="tel" name="tel" required />
+                        </div>
+                        <div class="form-group">
+                            <label for="message">お問い合わせ内容</label>
+                            <textarea
+                                id="message"
+                                name="message"
+                                rows="4"
+                                required
+                            ></textarea>
+                        </div>
+                        <button type="submit" class="contact-submit">
+                            送信する
+                        </button>
+                    </form>
+                </section>
+                <div class="cursor"></div>
+            </main>
 
-        <footer>
-            <p>&copy; 2025 metaleaf</p>
-        </footer>
+            <div class="page_top"><a href="#"></a></div>
 
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-        <script src="js/main.js"></script>
-    </div>
-</body>
+            <footer>
+                <p>&copy; 2025 metaleaf</p>
+            </footer>
 
+            <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+            <script src="js/main.js"></script>
+        </div>
+    </body>
 </html>
