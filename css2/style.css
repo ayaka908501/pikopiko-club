@@ -263,7 +263,7 @@ nav a {
     height: 400px;
     position: absolute;
     top: 7%;
-    right: 0;
+    right: 10%;
     bottom: 0;
     left: 10%;
 }
@@ -273,7 +273,6 @@ nav a {
     color: rgba(255, 255, 255);
     font-weight: bold;
     line-height: 90px;
-
 }
 
 /*---------------------------------------------
@@ -331,8 +330,6 @@ nav a {
     z-index: 1;
     display: inline-block;
     transition: .3s;
-
-
     text-align: center;
 }
 
@@ -628,8 +625,6 @@ slider
     /* background: linear-gradient(135deg, #fceabb, #556b2f); */
     margin-top: 100px;
     margin-bottom: 80px;
-
-
 }
 
 .track {
@@ -662,7 +657,7 @@ slider
  gallery
  ---------------------------------------------*/
  #gallery {
-    padding-inline: 50px;
+    padding-inline: 0;
  }
 
 .gallery-title {
@@ -695,10 +690,16 @@ slider
     padding: 20px 0;
 }
 
+/* .gallery-track { */
+    /* display: flex; */
+    /* width: calc((400px + 30px) * 14); */
+    /* animation: scroll-gallery 35s linear infinite; */
+/* } */
+
 .gallery-track {
     display: flex;
-    width: calc((400px + 30px) * 14);
     animation: scroll-gallery 35s linear infinite;
+    width: max-content; /* 子要素の幅に合わせる */
 }
 
 .gallery-item {
@@ -732,6 +733,10 @@ slider
     }
 }
 
+.slider,
+.gallery-slider {
+  overflow-x: hidden;
+}
 
 /*---------------------------------------------
  faq
@@ -775,7 +780,7 @@ slider
 
 .faq-question {
     position: relative;
-    padding: 16px 100px;
+    padding: 30px 100px;
     font-size: 24px;
     font-weight: bold;
     color: #4b6f44;
@@ -1046,19 +1051,30 @@ footer p {
     font-size: 14px;
 }
 
+
 /*-------------------------------------------
  レスポンシブ
  -------------------------------------------*/
 @media(max-width: 700px) {
 
     /*------全体------*/
+    .wrapper {
+        padding-inline: 8px; /* 狭い画面で余白確保 */
+    }
+
+    img {
+        width: 100%;
+        height: auto;
+    }
+
     .about-title,
     .user-comment-title,
     .gallery-title,
     .faq-title,
     .contact-title,
     .event-detail-title {
-        font-size: 48px;
+        font-size: 2rem;
+        /* font-size: 48px; */
     }
 
     .about-title::before,
@@ -1067,8 +1083,9 @@ footer p {
     .faq-title::before,
     .contact-title::before,
     .event-detail-title::before {
-        font-size: 100px;
+        font-size: 5rem;
         letter-spacing: 0.05em;
+        font-weight: bold;
         opacity: 0.3;
     }
 
@@ -1077,31 +1094,172 @@ footer p {
     .act-btn {
         padding: 0 10px 0 0;
     }
+
     .act-btn span {
         display: none;
     }
+
     .about-lead {
         top: 5%;
         right: 5%;
         left: 5%;
     }
+
     .about-lead p {
-        font-size: 35px;
+        font-size: 1.8rem;
+        font-weight: bold;
         line-height: 50px;
     }
 
     /*------about------*/
+    .about-title {
+        margin-top: 80px;
+        margin-bottom: 40px;
+    }
+
     .about-text {
         text-align: left;
         margin: 50px 10px;
     }
 
-    /*------event------*/
+    .about-text p {
+        font-size: 1rem;
+    }
 
-    
+    /*------event------*/
+    .into-event {
+        font-size: 1rem;
+    }
+
+    /*------voice------*/
+    #voice {
+        text-align: center;
+    }
+
+    .user-comment-title {
+        margin-top: 160px;
+        margin-bottom: 40px;
+    }
+
+    .user-comment-flex-a,
+    .user-comment-flex-k {
+        flex-direction: column;
+    }
+
+    .user-comment-flex-a {
+        margin-bottom: 40px;
+    }
+
+    .user-comment-image-a img,
+    .user-comment-image-k img {
+        width: 100px;
+        height: 100px;
+    }
+
+    .user-comment-text-a,
+    .user-comment-text-k {
+        margin: 0;
+        padding: 1em;
+        font-size: 1rem;
+        
+    }
+
+    .readmore-btn-container {
+        text-align: center;
+        width: 100%;
+    }
+
+    /*------slider------*/
+    .slider {
+        margin-top: 160px;
+        margin-bottom: 0;
+    }
+
     /*------gallery------*/
+    .gallery-title {
+        margin-bottom: 40px;
+        margin-top: 40px;
+    }
+
+    .gallery-item img {
+        height: 200px;
+    }
+
+    .gallery-item p {
+        font-size: 1rem;
+    }
+
     .gallery-track {
         animation: scroll-gallery 50s linear infinite;
     }
 
+    /*------faq------*/
+    #faq {
+        margin-top: 160px;
+        margin-bottom: 160px;
+    }
+
+    .faq-title {
+        margin-bottom: 40px;
+    }
+
+    .faq-question {
+        padding: 16px 100px;
+        font-size: 1.2rem;
+    }
+
+    /*------contact------*/
+    .contact-title {
+        margin-bottom: 0;
+        margin-top: 0;
+    }
+
+    .contact-form {
+        margin-top: 40px;
+    }
+
+    .form-group label {
+        font-size: 1rem;
+    }
+
+    /*------cursor------*/
+    .cursor {
+        display: none;
+    }
+
+    /*------event-page------*/
+    .event-detail-image {
+        width: 100%;
+        padding-inline: 16px;
+    }
+
+    .event-detail-image img {
+        border-radius: 12px;
+    }
+
+    .cheers-flex,
+    .hackathon-flex,
+    .beginner-meetup-flex,
+    .seminar-flex {
+        flex-direction: column;
+    }
+
+    .cheers-image,
+    .hackathon-image,
+    .beginner-meetup-image,
+    .seminar-image {
+        width: 100%;
+    }
+
+    .cheers-image img,
+    .hackathon-image img,
+    .beginner-meetup-image img,
+    .seminar-image img {
+        width: 100%;
+        border-radius: 12px;
+    }
+
+    .hackathon-title {
+        
+    }
 }
