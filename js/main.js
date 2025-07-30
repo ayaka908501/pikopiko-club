@@ -61,10 +61,26 @@ $(function () {
 
     // 利用者の声
 
-    $('.readmore-btn').on('click', function () {
-      $('.readmore-content').slideToggle(500);
-    });
+//     $('.readmore-btn').on('click', function () {
+//       $('.readmore-content').slideToggle(500);
+//     });
+// });
+// 利用者の声
+$('.readmore-btn').on('click', function () {
+  const btn = $(this);
+  const content = $('.readmore-content');
+
+  content.slideToggle(500, function () {
+    if (content.is(':visible')) {
+      btn.text('Close');
+    } else {
+      btn.text('Readmore');
+    }
+  });
 });
+
+
+
 
     // ギャラリースライドショー
 $(function () {
@@ -110,4 +126,4 @@ $(function () {
     
 
 
-
+})
