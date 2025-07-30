@@ -768,11 +768,9 @@ slider
 
 .faq-item {
     margin-bottom: 20px;
-    /* border: 3px solid #dbe8ce; */
     border-radius: 12px;
     background-color: #f9fbf6;
     box-shadow: 0 2px 10px 0 #9E9E9E;
-    /*.into-eventにあわせ*/
 }
 
 .faq-question {
@@ -783,7 +781,6 @@ slider
     color: #4b6f44;
     background-color: #eef5e9;
     border-radius: 12px;
-    /*角が丸く見えるように内側も角丸くする*/
     cursor: pointer;
 }
 
@@ -839,7 +836,6 @@ slider
     background-color: #fff;
     border-top: 1px solid #dbe8ce;
     border-radius: 0 0 12px 12px;
-    /*角が丸く見えるように内側も角丸くする、下部*/
     font-size: 20px;
     line-height: 1.6;
 }
@@ -851,12 +847,10 @@ slider
 
 .faq-question.open {
     border-radius: 12px 12px 0 0;
-    /*開いた時は下部の丸み消す*/
 }
 
 
 /*------Answerの中身------*/
-/*1つ目*/
 .faq-answer ol li {
     list-style: decimal;
     list-style-position: inside;
@@ -925,7 +919,6 @@ slider
     transition: border-color 0.3s, box-shadow 0.3s;
 }
 
-/*------入力する部分触ったら縁の色変わる------*/
 .form-group input:focus,
 .form-group textarea:focus {
     outline: none;
@@ -948,7 +941,6 @@ slider
     box-shadow: 0 2px 10px 0 #9E9E9E;
 }
 
-/*------送信する触った時------*/
 .contact-submit:hover {
     background-color: #3a5833;
 }
