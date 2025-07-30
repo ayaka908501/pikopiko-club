@@ -64,7 +64,35 @@ $(function () {
     $('.readmore-btn').on('click', function () {
       $('.readmore-content').slideToggle(500);
     });
+});
+
+    // ギャラリースライドショー
+$(function () {
+  let current = 0;
+  const slides = $(".gallery-slide");
+  const total = slides.length;
+
+  function showSlide(index) {
+    slides.removeClass("active").eq(index).addClass("active");
+  }
+
+  $(".next").click(function () {
+    current = (current + 1) % total;
+    showSlide(current);
   });
+
+  $(".prev").click(function () {
+    current = (current - 1 + total) % total;
+    showSlide(current);
+  });
+
+  // 自動再生（3秒ごと）
+  setInterval(function () {
+    current = (current + 1) % total;
+    showSlide(current);
+  }, 3000);
+});
+
 
     // アコーディオンメニュー
     $('.faq-question').on('click', function () {
