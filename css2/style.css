@@ -1056,21 +1056,16 @@ footer p {
     }
   
     /*------header------*/
-    .login-img {
-        margin: 0 auto 12px;
-    }
-
     .act-btn {
         padding: 0 10px 0 0;
     }    
 
     .act-btn a {
-        width: 150px;
+        width: 50px;
     }
 
     span {
-        font-size: 12px;
-        margin-left: 12px;
+        display: none;
     }
    
     .about-lead {
