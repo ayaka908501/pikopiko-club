@@ -3,7 +3,7 @@
 /*-----------------------------------------
  loading画面
  -------------------------------------------- */
- .loading {
+.loading {
     position: fixed;
     top: 0;
     left: 0;
@@ -15,35 +15,40 @@
     align-items: center;
     justify-content: center;
     z-index: 1000;
- }
+}
 
- .spinner {
+.spinner {
     width: 50px;
     height: 50px;
     border: solid 5px #f3f3f3;
     border-top: solid 5px #05A277;
     border-radius: 50%;
     animation: spin 1s linear infinite;
- }
+}
 
- @keyframes spin {
-    0% {transform: rotate(0deg);}
-    100%{transform: rotate(360deg);}
- }
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
 
- .loading-text {
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.loading-text {
     margin-top: 15px;
     font-family: Arial, sans-serif;
     color: #333;
- }
+}
 
- .content {
+.content {
     display: none;
- }
+}
 
- .show {
+.show {
     display: block;
- }
+}
 
 /* ---------------------------------------
 共通クラス
@@ -391,6 +396,7 @@ nav a {
     width: 800px;
     height: 200px;
     margin-inline: auto;
+    margin-bottom: 400px;
 }
 
 .event-detail-image img {
@@ -400,7 +406,7 @@ nav a {
 .cheers-flex {
     display: flex;
     justify-content: center;
-    padding-top: 400px;
+    /* padding-top: 400px; */
     align-items: center;
 }
 
@@ -480,6 +486,9 @@ nav a {
     color: #fff;
 }
 
+.event-text {
+    width: 100%;
+}
 /*---------------------------------------------
  user-comment
  ---------------------------------------------*/
@@ -550,7 +559,7 @@ nav a {
     height: auto;
     text-align: left;
     padding-left: 60px;
-    
+
 }
 
 .user-comment-image-k img {
@@ -559,32 +568,32 @@ nav a {
 }
 
 .user-comment-text-k {
-    margin: 0 0 2em auto; 
-    padding: 2em; 
-    border-radius: 30px 60px / 60px 30px;  
+    margin: 0 0 2em auto;
+    padding: 2em;
+    border-radius: 30px 60px / 60px 30px;
     border: solid 8px #90cc68;
     text-align: center;
 }
 
 .readmore-btn-container {
-  text-align: right;
-  margin-right: 300px;
-  margin-top: 8px;
+    text-align: right;
+    margin-right: 300px;
+    margin-top: 8px;
 }
 
 .readmore-btn {
-  padding: 8px 16px;
-  background-color: rgb(75, 111, 68);
-  color: rgb(228, 240, 220);
-  border: none;
-  border-radius: 4px;
-  font-weight: bold;
+    padding: 8px 16px;
+    background-color: rgb(75, 111, 68);
+    color: rgb(228, 240, 220);
+    border: none;
+    border-radius: 4px;
+    font-weight: bold;
 
 }
 
 .readmore-content {
-  display: none;
-  margin-top: 20px;
+    display: none;
+    margin-top: 20px;
 }
 
 /*---------------------------------------------
@@ -630,9 +639,9 @@ slider
 /*---------------------------------------------
  gallery
  ---------------------------------------------*/
- #gallery {
+#gallery {
     padding-inline: 0;
- }
+}
 
 .gallery-title {
     text-align: center;
@@ -695,6 +704,7 @@ slider
     0% {
         transform: translateX(0);
     }
+
     100% {
         transform: translateX(calc(-1 * ((400px + 30px) * 7)));
     }
@@ -702,7 +712,7 @@ slider
 
 .slider,
 .gallery-slider {
-  overflow-x: hidden;
+    overflow-x: hidden;
 }
 
 /*---------------------------------------------
@@ -822,7 +832,7 @@ slider
 
 /*---------------------------------------------
  contact
- ---------------------------------------------*/ 
+ ---------------------------------------------*/
 .contact-title {
     text-align: center;
     margin-bottom: 30px;
@@ -915,8 +925,8 @@ slider
     left: 0;
     width: 25px;
     height: 25px;
-    background-color: rgba(250,233,80,0.4);
-    box-shadow: 0 0 20px 10px rgba(250,233,80,0.7),inset 0 0 10px rgba(250,233,80,0.7);
+    background-color: rgba(250, 233, 80, 0.4);
+    box-shadow: 0 0 20px 10px rgba(250, 233, 80, 0.7), inset 0 0 10px rgba(250, 233, 80, 0.7);
     border-radius: 50%;
     pointer-events: none;
     z-index: 9999;
@@ -1044,16 +1054,25 @@ footer p {
         font-weight: bold;
         opacity: 0.3;
     }
-
+  
     /*------header------*/
+    .login-img {
+        margin: 0 auto 12px;
+    }
+
     .act-btn {
         padding: 0 10px 0 0;
+    }    
+
+    .act-btn a {
+        width: 150px;
     }
 
-    .act-btn span {
-        display: none;
+    span {
+        font-size: 12px;
+        margin-left: 12px;
     }
-
+   
     .about-lead {
         top: 5%;
         right: 5%;
@@ -1061,7 +1080,7 @@ footer p {
     }
 
     .about-lead p {
-        font-size: 1.8rem;
+        font-size: 27px;
         font-weight: bold;
         line-height: 50px;
     }
@@ -1079,6 +1098,8 @@ footer p {
 
     .about-text p {
         font-size: 1rem;
+        word-break: keep-all;
+        text-align: center;
     }
 
     /*------event------*/
@@ -1092,7 +1113,7 @@ footer p {
     }
 
     .user-comment-title {
-        margin-top: 160px;
+        margin-top: 290px;
         margin-bottom: 40px;
     }
 
@@ -1111,12 +1132,23 @@ footer p {
         height: 100px;
     }
 
+    .user-comment-image-a {
+        text-align: center;
+        padding: 0;
+    }
+
+    
+    .user-comment-image-k {
+        text-align: center;
+        padding: 0;
+    }
+
     .user-comment-text-a,
     .user-comment-text-k {
         margin: 0;
         padding: 1em;
         font-size: 1rem;
-        
+
     }
 
     .readmore-btn-container {
@@ -1155,7 +1187,7 @@ footer p {
     }
 
     .faq-title {
-        margin-bottom: 40px;
+        margin-top: 310px;
     }
 
     .faq-question {
@@ -1166,7 +1198,7 @@ footer p {
     /*------contact------*/
     .contact-title {
         margin-bottom: 0;
-        margin-top: 0;
+        margin-top: 210px;
     }
 
     .contact-form {
@@ -1197,7 +1229,6 @@ footer p {
         border-radius: 80%;
     }
 
-    .cheers-flex,
     .hackathon-flex,
     .beginner-meetup-flex,
     .seminar-flex {
@@ -1224,7 +1255,6 @@ footer p {
         border-radius: 12px;
         object-fit: cover;
     }
-
     .cheers-text,
     .hackathon-text,
     .beginner-meetup-text,
