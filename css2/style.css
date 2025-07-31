@@ -59,6 +59,7 @@ body {
     font-weight: 400;
     min-height: 100vh;
     position: sticky;
+    overflow-x: hidden;
 }
 
 
@@ -117,6 +118,8 @@ h3 {
 }
 
 .header-line img {
+    max-width: 100%;
+    height: auto;
     padding-top: 20px;
 }
 
@@ -170,8 +173,9 @@ h3 {
 
 
 .login-img {
+    max-width: 100%;
+    height: auto;
     width: 30px;
-    height: 60px;
     margin-left: 10px;
     margin-bottom: 12px;
 }
@@ -324,7 +328,6 @@ nav a {
 }
 
 .into-event {
-
     color: rgb(228, 240, 220);
     background-color: rgb(75, 111, 68);
     font-size: 24px;
@@ -670,17 +673,10 @@ slider
     padding: 20px 0;
 }
 
-/* .gallery-track { */
-/* display: flex; */
-/* width: calc((400px + 30px) * 14); */
-/* animation: scroll-gallery 35s linear infinite; */
-/* } */
-
 .gallery-track {
     display: flex;
     animation: scroll-gallery 35s linear infinite;
     width: max-content;
-    /* 子要素の幅に合わせる */
 }
 
 .gallery-item {
@@ -704,7 +700,6 @@ slider
     font-size: 20px
 }
 
-/* アニメーション */
 @keyframes scroll-gallery {
     0% {
         transform: translateX(0);
@@ -775,8 +770,6 @@ slider
     background-color: #e4f0dc;
 }
 
-
-/*------[+]の部分------*/
 .faq-question .btn {
     position: absolute;
     top: 50%;
@@ -784,7 +777,6 @@ slider
     width: 16px;
     height: 16px;
     transform: translateY(-50%);
-    /*[＋]を行の真ん中に*/
 }
 
 .faq-question .btn:before,
@@ -812,11 +804,8 @@ slider
 
 .faq-question::-webkit-details-marker {
     display: none;
-    /*[▶︎]が入ってたのを消すため*/
 }
 
-
-/*------アコーディオン開いた中身------*/
 .faq-answer {
     display: none;
     padding: 20px 30px;
@@ -829,15 +818,12 @@ slider
 
 .faq-question.open .btn::after {
     transform: scaleY(0);
-    /* ＋→− の切り替えをここで制御できる */
 }
 
 .faq-question.open {
     border-radius: 12px 12px 0 0;
 }
 
-
-/*------Answerの中身------*/
 .faq-answer ol li {
     list-style: decimal;
     list-style-position: inside;
@@ -893,7 +879,6 @@ slider
     color: #4b6f44;
 }
 
-/*------入力する部分------*/
 .form-group input,
 .form-group textarea {
     padding: 5px 10px;
@@ -913,7 +898,6 @@ slider
     box-shadow: 0 0 5px rgba(167, 207, 161, 0.4);
 }
 
-/*------送信するボタン------*/
 .contact-submit {
     align-self: center;
     background-color: #4b6f44;
@@ -945,10 +929,8 @@ slider
     box-shadow: 0 0 20px 10px rgba(250, 233, 80, 0.7), inset 0 0 10px rgba(250, 233, 80, 0.7);
     border-radius: 50%;
     pointer-events: none;
-    /* クリック操作を邪魔しない */
     z-index: 9999;
     mix-blend-mode: multiply;
-    /* 光っぽい演出 */
     transform: translate(-50%, -50%);
     transition: transform 0.1s linear;
 }
@@ -1041,10 +1023,10 @@ footer p {
  -------------------------------------------*/
 @media(max-width: 700px) {
 
+
     /*------全体------*/
     .wrapper {
         padding-inline: 8px;
-        /* 狭い画面で余白確保 */
     }
 
     img {
@@ -1059,7 +1041,6 @@ footer p {
     .contact-title,
     .event-detail-title {
         font-size: 2rem;
-        /* font-size: 48px; */
     }
 
     .about-title::before,
@@ -1073,9 +1054,7 @@ footer p {
         font-weight: bold;
         opacity: 0.3;
     }
-
-    
-
+  
     /*------header------*/
     .login-img {
         margin: 0 auto 12px;
@@ -1236,16 +1215,27 @@ footer p {
     }
 
     /*------event-page------*/
+    .event-detail-title {
+        padding-top: 160px;
+        margin-bottom: 0;
+    }
 
-    .cheers-flex {
-        flex-direction: column;
-        padding-top: 0;        
+
+    .event-detail-image {
+        display: none;
+    }
+
+    .event-detail-image img {
+        border-radius: 80%;
     }
 
     .hackathon-flex,
     .beginner-meetup-flex,
     .seminar-flex {
         flex-direction: column;
+        align-items: center;
+        padding-top: 100px;
+        gap: 20px;
     }
 
     .cheers-image,
@@ -1260,31 +1250,18 @@ footer p {
     .hackathon-image img,
     .beginner-meetup-image img,
     .seminar-image img {
+        width: 80%;
+        height: 200px;
         border-radius: 12px;
-        width: 500px;
-        height: 400px;
+        object-fit: cover;
     }
-
-
     .cheers-text,
     .hackathon-text,
     .beginner-meetup-text,
     .seminar-text {
-        width: 100%;
-        font-size: 14px;
-        margin-bottom: 32px;
-        text-align: center;
-    }
-
-    .cheers-title,
-    .hackathon-title,
-    .beginner-meetup-title,
-    .seminar-title {
+        width: 90%;
         text-align: left;
-}
-
-    .event-detail-image {
-        display: none;
-    }
+        font-size: 1.2rem;
+    }  
 
 }
