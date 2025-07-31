@@ -32,7 +32,8 @@ $(function () {
         let headerHeight = $('.header-line').outerHeight();
         let href = $(this).attr("href");
         let target = $(href == "#" || href == "" ? "html" : href);
-        let position = target.offset().top - headerHeight;
+        let marginOffset = window.innerWidth <= 700 ? 50 : 80;
+        let position = target.offset().top - headerHeight - marginOffset;
         $("html,body").animate({ scrollTop: position }, 600, "swing");
         $("header").removeClass("open");
         return false;
