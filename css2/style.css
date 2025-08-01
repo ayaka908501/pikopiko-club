@@ -1036,8 +1036,7 @@ footer p {
     .contact-title,
     .event-detail-title {
         font-size: 2rem;
-        border-bottom: 1px solid;
-
+        text-decoration: underline;
     }
 
     .about-title::before,
