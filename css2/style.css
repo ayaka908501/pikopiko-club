@@ -1025,7 +1025,7 @@ footer p {
     }
 
     img {
-        width: 100%;
+        width: 120px;
         height: auto;
     }
 
@@ -1050,16 +1050,21 @@ footer p {
     }
   
     /*------header------*/
+    .login-img {
+        margin:  0 auto 12px;
+    }
+
     .act-btn {
         padding: 0 10px 0 0;
     }    
 
     .act-btn a {
-        width: 50px;
+        width: 150px;
     }
 
     span {
-        display: none;
+        font-size: 12px;
+        margin-left: 12px;
     }
    
     .about-lead {
