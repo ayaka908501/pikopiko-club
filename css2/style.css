@@ -1187,6 +1187,10 @@ footer p {
         font-size: 1.2rem;
     }
 
+    .faq-question .btn {
+        display: none;
+    }
+
     /*------contact------*/
     .contact-title {
         margin-bottom: 0;
