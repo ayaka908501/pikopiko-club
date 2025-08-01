@@ -59,7 +59,6 @@ body {
     font-weight: 400;
     min-height: 100vh;
     position: sticky;
-    overflow-x: hidden;
 }
 
 
@@ -312,11 +311,12 @@ nav a {
 
 .about-text {
     text-align: center;
-    margin: 110px;
+    margin: 110px auto;
+    padding: 0 20px;
+    max-width: 800px;
     font-size: 20px;
     font-weight: bold;
 }
-
 
 /*---------------------------------------------
  event
@@ -710,11 +710,6 @@ slider
     }
 }
 
-.slider,
-.gallery-slider {
-    overflow-x: hidden;
-}
-
 /*---------------------------------------------
  faq
  ---------------------------------------------*/
@@ -1041,6 +1036,8 @@ footer p {
     .contact-title,
     .event-detail-title {
         font-size: 2rem;
+        border-bottom: 1px solid;
+
     }
 
     .about-title::before,
@@ -1049,10 +1046,7 @@ footer p {
     .faq-title::before,
     .contact-title::before,
     .event-detail-title::before {
-        font-size: 5rem;
-        letter-spacing: 0.05em;
-        font-weight: bold;
-        opacity: 0.3;
+        display: none;
     }
   
     /*------header------*/
@@ -1086,15 +1080,15 @@ footer p {
         margin-bottom: 40px;
     }
 
-    .about-text {
-        text-align: left;
-        margin: 50px 10px;
+    .about-title::before {
+        top: -35px;
+        letter-spacing: 8px;
     }
 
-    .about-text p {
+    .about-text {
+        text-align: left;
         font-size: 1rem;
-        word-break: keep-all;
-        text-align: center;
+        padding: 0 16px;
     }
 
     /*------event------*/
@@ -1186,7 +1180,7 @@ footer p {
     }
 
     .faq-question {
-        padding: 16px 100px;
+        padding: 16px 30px;
         font-size: 1.2rem;
     }
 
